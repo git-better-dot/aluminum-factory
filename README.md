@@ -1,4 +1,4 @@
-# aluminum-factory
+# Aluminum Factory Website
 
 ## Team Members
 
