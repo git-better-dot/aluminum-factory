@@ -54,8 +54,10 @@ function submitHandler(event) {
   getValuesLogin();
   console.log(userName);
   console.log(passWord);
+  userLogChecked();
   //now you have to put a if statment to compare the saved username and password from the sign up
   //to the ones entered in the log in from
+
 
   //here we hide the log in form after submiting
   document.getElementById('LoginForm').style.display = 'none';
@@ -83,13 +85,57 @@ SingUpForm.addEventListener('submit', submitHandler1);
 
 function submitHandler1(event) {
   event.preventDefault();
-
-
   getValuesSignUp();
-  console.log(userNameS);
-  console.log(passWordS);
-  console.log(email);
-  console.log(gender);
-  console.log(question);
-  console.log(anwser);
+
+  let sendtoStorage = JSON.stringify(UsersData.allUsers);
+  localStorage.usersInfo = sendtoStorage;
+
+  savedUsers();
+
+  //   console.log(userNameS);
+  //   console.log(passWordS);
+  //   console.log(email);
+  //   console.log(gender);
+  //   console.log(question);
+  //   console.log(anwser);
 }
+
+
+function UsersData(username, password, email, gender, question, answer) {
+  this.username = username;
+  this.password = password;
+  this.email = email;
+  this.gender = gender;
+  this.question = question;
+  this.answer = answer;
+  UsersData.allUsers.push(this);
+}
+
+UsersData.allUsers = [];
+
+
+function savedUsers() {
+  if (localStorage.usersInfo) {
+
+    let lastUser = JSON.parse(localStorage.usersInfo);
+    for (let i = 0; i < lastUser.length; i++) {
+      new UsersData(lastUser[i].username, lastUser[i].password, lastUser[i].email, lastUser[i].gender, lastUser[i].question, lastUser[i].answer);
+    }
+  }
+}
+
+
+
+
+
+
+// function userLogChecked() {
+//   for (let i = 0; i < users.length; i++) {
+//     if (users[i].Username == userName && users[i].Password == passWord) {
+//       alert('You are loged in.');
+//     } else {
+//       alert('ERROR.');
+//     }
+
+//   }
+// }

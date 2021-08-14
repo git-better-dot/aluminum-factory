@@ -8,6 +8,7 @@
 
 .slides img {
   flex-grow: 100;
+  object-fit: cover;
 }
 
 .slides input{
@@ -57,12 +58,19 @@
   }
 
  .buttonLeft, .buttonRight {
-   background-color: white;
-   position: relative;
-    z-index: 100;
-    width: 40px;
-    height: 40px;
-    top: 220px;
+   background-color: hsla(0, 0%, 100%, 30%);
+   z-index: 3;
+   width: 80px;
+   height: 40px;
+   top: 220px;
+   position: absolute;
+   border: 1px solid hsla(0, 0%, 100%, 40%);
+   color: #222831;
+ }
+
+ .buttonLeft:hover, .buttonRight:hover {
+  background-color: hsla(0, 0%, 100%, 60%);
+  color: #FF5722;
  }
 
  .buttonLeft {
