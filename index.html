@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +9,8 @@
     , initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/user.css">
+    <link rel="stylesheet" href="./css/mainimg.css">
+
     <title>Aluminum Souq</title>
 
 
@@ -42,10 +45,22 @@
             <h2>
                 #1 Aluminum Store
             </h2>
-            <img id="main-img" src="https://via.placeholder.com/1240x570" alt="">
-
-            <button class="w3-button w3-black w3-display-left">&#10094;</button>
-            <button class="w3-button w3-black w3-display-right">&#10095;</button>
+            <div class = 'slides'>
+                <img id="main-img" src="https://via.placeholder.com/1240x570/222222" alt="">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+    
+                <button class="w3-button w3-black w3-display-left" onclick="subDivs()">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs()">&#10095;</button>
+                </div>
             <!-- this is the log in form -->
             <div class="form-popup" id="LoginForm">
                 <form class="form-container" id="LoginForm">
@@ -276,6 +291,8 @@
     <script src="./js/app.js"></script>
     <script src="./js/homepageCSS.js"></script>
     <script src="./js/user.js"></script>
+    <script src="./js/mainimg.js"></script>
+
 </body>
 
 </html>
