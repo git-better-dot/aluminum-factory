@@ -22,12 +22,13 @@
  - Note: After order confirmation, the user can submit a feedback
 5. *About :* why we love aluminum, history, vision
 6. *Contact us :*  get in touch (form for questions)
-7. *Languages :* (en and ar)
+
 * Stretch goals:
 - drawing design tool
 - link it with python or node.js to react with the owners pc
 if live server
 - Send order confirmation email to the user's email.
+- 7. *Languages :* (en and ar)
 
 
 ## User Stories
