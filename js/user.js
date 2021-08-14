@@ -122,9 +122,7 @@ function savedUsers() {
     for (let i = 0; i < lastUser.length; i++) {
       new UsersData(lastUser[i].username, lastUser[i].password, lastUser[i].email, lastUser[i].gender, lastUser[i].question, lastUser[i].answer);
     }
-
-  } 
-
+  }
 }
 
 
