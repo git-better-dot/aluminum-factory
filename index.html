@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/user.css">
+    <link rel="stylesheet" href="./css/mainimg.css">
+
+    <title>Aluminum Souq</title>
+
+
+</head>
+
+<body>
+
+    <header id="mainHeader">
+
+        <img src=" https://via.placeholder.com/200x70/000000">
+        <nav id="navBar">
+            <div>
+                <a href="#mainSlider">Home</a>
+                <a href="#Services"> Products & Services</a>
+                <a href="#accessories">Accessories</a>
+                <a href="#brief">Brief</a>
+            </div>
+
+            <div id="buttonsSection">
+                <button id="logInBtn" onclick="myLogInFunction()">log in</button>
+                <button id="SignUpBtn" onclick="mySignUpFunction()">sign up</button>
+            </div>
+
+            <div id="navMenu">
+                <img src="https://via.placeholder.com/50x50" alt="">
+            </div>
+        </nav>
+
+    </header>
+    <main id="main">
+        <div id="mainSlider">
+            <h2>
+                #1 Aluminum Store
+            </h2>
+            <div class = 'slides'>
+                <img id="main-img" src="https://via.placeholder.com/1240x570/222222" alt="">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+    
+                <button class="w3-button w3-black w3-display-left" onclick="subDivs()">&#10094;</button>
+                <button class="w3-button w3-black w3-display-right" onclick="plusDivs()">&#10095;</button>
+                </div>
+            <!-- this is the log in form -->
+            <div class="form-popup" id="LoginForm">
+                <form class="form-container" id="LoginForm">
+                    <h1>Login</h1>
+                    <!-- this is the username label and field -->
+                    <label for="Username"><b>Username</b></label>
+                    <input type="text" id="username" placeholder="Enter Username" name="Username" required>
+                    <!-- this is the password label and field -->
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+                    <!-- this is the forgot password span it needs somework btw -->
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                    <!-- here there is the submit button and the close button -->
+                    <button type="submit" value="login" class="btn">Login</button>
+                    <button type="button" class="btn cancel" value="Login" onclick="closeForm()">Close </button>
+
+                </form>
+            </div>
+            <div class="form-popup" id="SingUpForm">
+                <form class="form-container" id="SingUpForm">
+                    <h1>Sign up</h1>
+                    <!-- this is the username label and field -->
+                    <label for="Username"><b>Enter Username</b></label>
+                    <input type="text" id="usernameS" placeholder="Enter Username" name="Username" required>
+
+                    <!-- this is the password label and field -->
+                    <label for="psw"><b>Enter Password</b></label>
+                    <input type="password" id="passwordS" placeholder="Enter Password" name="psw" required>
+                    <label for="Email"><b>Enter Email</b></label>
+                    <input type="text" id="EmailS" placeholder="Enter Email" name="Email" required>
+                    <p>Select your Gender:</p>
+                    <input type="radio" id="Gender" name="Gender" value="Male">
+                    <label for="Male">Male</label><br>
+                    <input type="radio" id="Gender" name="Gender" value="Female">
+                    <label for="Female">Female</label><br>
+                    <label for="cars">Choose a Security Question :</label>
+
+                    <select id="Questions">
+                        <option value="favoriteFriend">What was your favorite school friend name?</option>
+                        <option value="favoriteMovie">What’s your favorite movie?</option>
+                        <option value="firstCar">What was your first car?</option>
+                        <option value="astrologicalSign" selected>What is your astrological sign?</option>
+                    </select>
+                    <input type="text" id="yourAnwser" placeholder="Enter yourAnwser" name="yourAnwser" required>
+
+                    <!-- here there is the submit button and the close button -->
+                    <button type="submit" value="Register" class="btn">Sign up</button>
+                    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+                </form>
+            </div>
+
+        </div>
+
+
+        <section id="Services">
+            <h2>
+                Products line & Services
+            </h2>
+            <div>
+
+                <p id="sideText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, commodi repellendus. Asperiores corrupti sed ex et dolores sit facere repellat, nam perspiciatis blanditiis laudantium at molestias placeat ea quidem itaque Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Ratione unde, fugiat reprehenderit voluptatem magnam rem velit impedit sit totam incidunt culpa voluptas aspernatur quae voluptatum doloremque ipsa dolores dolor soluta! Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Nobis ratione, ea, dignissimos accusamus totam nemo nisi, exercitationem repellat laborum aspernatur nostrum. Fugit soluta quos consequatur quaerat, optio sequi minima dolores? Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Eaque officia, veritatis aliquid, aperiam, molestias consequuntur repudiandae aliquam natus doloremque eveniet vero iste rerum architecto! Recusandae soluta numquam nobis libero velit.
+
+
+                </p>
+                <button class="productsBtn">Products Line</button>
+                <button class="servicesBtn">Services</button>
+            </div>
+
+            <div id="sideDiv">
+                <img id="sideImage" src="https://via.placeholder.com/620x500" alt="">
+
+            </div>
+
+        </section>
+        <section id="accessories">
+            <h2>Store</h2>
+            <div id="bestSeller">
+                <div>
+                    <figure>
+                        <img src="https://via.placeholder.com/295x280" alt="">
+
+                        <figcaption>
+                            ghdfsaf
+
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div>
+
+                    <figure>
+                        <img src="https://via.placeholder.com/295x280" alt="">
+                        <figcaption>
+
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="https://via.placeholder.com/295x280" alt="">
+                        <figcaption>
+
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="https://via.placeholder.com/295x280" alt="">
+                        <figcaption>
+
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div id="allProducts">
+                <div>
+                    <figure>
+                        <img src="https://via.placeholder.com/295x280" alt="">
+                        <figcaption>
+                            ghdfsaf
+
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div>
+
+                    <figure>
+                        <img src="https://via.placeholder.com/295x280" alt="">
+                        <figcaption>
+
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="https://via.placeholder.com/295x280" alt="">
+                        <figcaption>
+
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="https://via.placeholder.com/295x280" alt="">
+                        <figcaption>
+
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="brief">
+            <h2>Brief About Us</h2>
+            <div>
+
+                <p id="sideText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, commodi repellendus. Asperiores corrupti sed ex et dolores sit facere repellat, nam perspiciatis blanditiis laudantium at molestias placeat ea quidem itaque Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Ratione unde, fugiat reprehenderit voluptatem magnam rem velit impedit sit totam incidunt culpa voluptas aspernatur quae voluptatum doloremque ipsa dolores dolor soluta! Lorem ipsum dolor sit
+                    amet, consectetur adipisicing elit. Nobis ratione, ea, dignissimos accusamus totam nemo nisi, exercitationem repellat laborum aspernatur nostrum. Fugit soluta quos consequatur quaerat, optio sequi minima dolores? Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Eaque officia, veritatis aliquid, aperiam, molestias consequuntur repudiandae aliquam natus doloremque eveniet vero iste rerum architecto! Recusandae soluta numquam nobis libero velit.
+
+                </p>
+                <button class="adresses">Adresses</button>
+                <button class="contactUs">Contact Us</button>
+            </div>
+
+            <div id="sideDiv">
+                <img id="sideImage" src="https://via.placeholder.com/620x500" alt="">
+
+            </div>
+
+        </section>
+
+
+        <section id="contactUs">
+            <h2>
+                Contact Us
+            </h2>
+            <div>
+
+                <p id="contactParagh">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium harum culpa incidunt distinctio optio autem architecto at soluta perspiciatis, recusandae enim nesciunt excepturi accusamus mollitia temporibus voluptate eaque nihil amet.
+                </p>
+
+            </div>
+        </section>
+        <section id="contactForm">
+
+            <fieldset>
+                <legend>Contact Us Form </legend>
+                <form id='contactusForm'>
+                    <label for="Aluminum">Which Action Aluminum location are you Looking for ?</label>
+                    <input type="text" name="" id="Aluminum" required>
+                    <label class="ProductEnquiry">Product Enquiry</label>
+                    <input type="text" name="" id="ProductEnquiry" required>
+                    <label class="FirstName">First Name</label>
+                    <input type="text" name="" id="FirstName" required>
+                    <label class="LastName">Last Name</label>
+                    <input type="text" name="" id="LastName" required>
+
+
+                    <label class="Phone">Phone</label>
+                    <input type="tel" name="" id="Phone" required>
+
+                    <label class="Email"> Email</label>
+                    <input type="Email" name="" id="Email" required>
+
+                    <label class="message">Message </label>
+                    <input type="text" name="" id="message" required>
+
+
+                    <input type="submit" value="submit" id="submitInput">
+                </form>
+            </fieldset>
+
+
+        </section>
+    </main>
+
+
+    <footer id="footer">
+
+    </footer>
+    <script src="./js/user.js"></script>
+    <script src="./js/mainimg.js"></script>
+
+</body>
+
+</html>
