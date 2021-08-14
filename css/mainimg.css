@@ -2,6 +2,12 @@
   /* width: 500%; */
   /* height: 500px; */
   display: flex;
+  position: relative;
+  left: 0px;
+}
+
+.slides img {
+  flex-grow: 100;
 }
 
 .slides input{
@@ -11,14 +17,15 @@
     position: absolute;
     width: 800px;
     margin-top: 40px;
-    margin-left: 200px;
+    margin-left: 250px;
     display: flex ;
     justify-content: center;
     padding: 10px;
+    bottom: 40px;
   }
   
   .manual-btn{
-    border: 2px solid #dc6440;
+    border: 2px solid #FF5722;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
@@ -29,13 +36,14 @@
   }
   
   .manual-btn:hover{
-    background: #dc6440;
+    background: #FF5722;
   }
   
   #radio1:checked ~ .first{
     margin-left: 0;
+    
   }
-  
+
   #radio2:checked ~ .first{
     margin-left: -20%;
   }
@@ -47,7 +55,22 @@
   #radio4:checked ~ .first{
     margin-left: -60%;
   }
- 
+
+ .buttonLeft, .buttonRight {
+   background-color: white;
+   position: relative;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    top: 220px;
+ }
+
+ .buttonLeft {
+   left: 15px;
+ }
+
+ .buttonRight {
+   right: 15px;
+ }
+
   /*css for automatic navigation*/
-  
-  

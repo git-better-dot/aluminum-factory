@@ -5,15 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/user.css">
     <link rel="stylesheet" href="./css/mainimg.css">
-
     <title>Aluminum Souq</title>
-
-
 </head>
 
 <body>
@@ -35,18 +32,37 @@
             </div>
 
             <div id="navMenu">
-                <img src="https://via.placeholder.com/50x50" alt="">
+                <img src="./img/muneSide.png" alt="menu" height="30" width="30">
             </div>
         </nav>
 
     </header>
+
     <main id="main">
         <div id="mainSlider">
-            <h2>
-                #1 Aluminum Store
-            </h2>
+            <div id="usersBar">
+                <span class="flexElement">
+                    <img src="https://via.placeholder.com/50x50" alt="who are we">
+                    <h2>#1 Aluminum Store</h2>
+                    <small>Best Aluminum Store in Jordan</small>
+                </span>
+                <span class="flexElement">
+                    <img src="https://via.placeholder.com/50x50" alt="who are we">
+                    <h2>Follow Us On Facebook</h2>
+                    <small>Participate in our public community</small>
+                </span>
+                <span class="flexElement">
+                    <img src="https://via.placeholder.com/50x50" alt="who are we">
+                    <h2>Industry Experience</h2>
+                    <small>Over 4 days on the field</small>
+                </span>
+
+            </div>
+
             <div class = 'slides'>
-                <img id="main-img" src="https://via.placeholder.com/1240x570/222222" alt="">
+                <button class="buttonLeft" onclick="subDivs()">&#10094;</button>
+
+                <img id="main-img" src="https://via.placeholder.com/1240x570/222222" alt="" height="500">
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2">
                 <input type="radio" name="radio-btn" id="radio3">
@@ -58,8 +74,7 @@
                     <label for="radio4" class="manual-btn"></label>
                 </div>
     
-                <button class="w3-button w3-black w3-display-left" onclick="subDivs()">&#10094;</button>
-                <button class="w3-button w3-black w3-display-right" onclick="plusDivs()">&#10095;</button>
+                <button class="buttonRight" onclick="plusDivs()">&#10095;</button>
                 </div>
             <!-- this is the log in form -->
             <div class="form-popup" id="LoginForm">
@@ -115,179 +130,132 @@
 
         </div>
 
-
-        <section id="Services">
-            <h2>
-                Products line & Services
-            </h2>
-            <div>
-
-                <p id="sideText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, commodi repellendus. Asperiores corrupti sed ex et dolores sit facere repellat, nam perspiciatis blanditiis laudantium at molestias placeat ea quidem itaque Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Ratione unde, fugiat reprehenderit voluptatem magnam rem velit impedit sit totam incidunt culpa voluptas aspernatur quae voluptatum doloremque ipsa dolores dolor soluta! Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit. Nobis ratione, ea, dignissimos accusamus totam nemo nisi, exercitationem repellat laborum aspernatur nostrum. Fugit soluta quos consequatur quaerat, optio sequi minima dolores? Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Eaque officia, veritatis aliquid, aperiam, molestias consequuntur repudiandae aliquam natus doloremque eveniet vero iste rerum architecto! Recusandae soluta numquam nobis libero velit.
-
-
-                </p>
-                <button class="productsBtn">Products Line</button>
-                <button class="servicesBtn">Services</button>
-            </div>
-
-            <div id="sideDiv">
-                <img id="sideImage" src="https://via.placeholder.com/450x300" alt="">
-
-            </div>
-
-        </section>
-        <section id="accessories">
-            <h2>Store</h2>
-            <div id="bestSeller">
-                <div>
-                    <figure>
-                        <img src="https://via.placeholder.com/150x200" alt="">
-
-                        <figcaption>
-                            ghdfsaf
-
-                        </figcaption>
-                    </figure>
+            <section id="Services">
+                <h2>
+                    Products line & Services
+                </h2>
+                <div id="servicesContent">
+                    <div id='Servicesinfo'>
+                        <h3 id="servicesHeader">Alucobond</h3>
+                        <p id="servicesPara">Alucobond is a composite panel consisting of two aluminum cover sheets and a fire-retardant or non-combustible mineral-filled core that stands for sustainable construction quality and the highest creative standards.</p>
+                        <button class="productsBtn">Products Line</button>
+                        <button class="servicesBtn">Services</button>
+                    </div>
+    
+                    <div id="sideDiv">
+                        <img id="sideImage" src="https://via.placeholder.com/450x300" alt="">
+                        <button class="left slide" onclick="divSubDivs()">&#10094;</button>
+                        <button class="right slide" onclick="divPlusDivs()">&#10095;</button>
+    
+                    </div>
                 </div>
-
-                <div>
-
-                    <figure>
-                        <img src="https://via.placeholder.com/150x200" alt="">
-                        <figcaption>
-
-                        </figcaption>
-                    </figure>
+    
+            </section>
+            <section class="accessories">
+                <h2>Store</h2>
+                <h3>Best sellers</h3>
+                <div id="bestSeller">
+                    <div>
+                        <figure>
+                            <img src="https://via.placeholder.com/150x200" alt="">
+    
+                            <figcaption>Best seller 1</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
+    
+                    <div>
+    
+                        <figure>
+                            <img src="https://via.placeholder.com/150x200" alt="">
+                            <figcaption>Best seller 2</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
+    
+                    <div>
+                        <figure>
+                            <img src="https://via.placeholder.com/150x180" alt="">
+                            <figcaption>Best seller 3</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
+    
+                    <div>
+                        <figure>
+                            <img src="https://via.placeholder.com/150x200" alt="">
+                            <figcaption>Best seller 4</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
                 </div>
-
-                <div>
-                    <figure>
-                        <img src="https://via.placeholder.com/150x200" alt="">
-                        <figcaption>
-
-                        </figcaption>
-                    </figure>
+    
+                <h3>Other accessories</h3>
+    
+                <div id="allProducts">
+                    <div>
+                        <figure>
+                            <img src="https://via.placeholder.com/150x200" alt="">
+                            <figcaption>Product 1</figcaption>
+                            <small>100 JD</small>
+                    </div>
+    
+                    <div>
+    
+                        <figure>
+                            <img src="https://via.placeholder.com/150x200" alt="">
+                            <figcaption>Product 2</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
+    
+                    <div>
+                        <figure>
+                            <img src="https://via.placeholder.com/150x200" alt="">
+                            <figcaption>Product 3</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
+    
+                    <div>
+                        <figure>
+                            <img src="https://via.placeholder.com/150x200" alt="">
+                            <figcaption>Product 4</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
                 </div>
-
-                <div>
-                    <figure>
-                        <img src="https://via.placeholder.com/150x200" alt="">
-                        <figcaption>
-
-                        </figcaption>
-                    </figure>
+    
+            </section>
+    
+            <section id="brief">
+                <h2>Who are we?</h2>
+                <div id="breifContent">
+                    <div>
+                        <p id="sideText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, commodi repellendus. Asperiores corrupti sed ex et dolores sit facere repellat, nam perspiciatis blanditiis laudantium at molestias placeat ea quidem itaque Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Ratione unde, fugiat reprehenderit voluptatem magnam rem velit impedit sit totam incidunt culpa voluptas aspernatur quae voluptatum doloremque ipsa dolores dolor soluta! Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit. Nobis ratione, ea, dignissimos accusamus totam nemo nisi, exercitationem repellat laborum aspernatur nostrum. Fugit soluta quos consequatur quaerat, optio sequi minima dolores? Lorem ipsum dolor
+                            sit amet consectetur adipisicing elit. Eaque officia, veritatis aliquid, aperiam, molestias consequuntur repudiandae aliquam natus doloremque eveniet vero iste rerum architecto! Recusandae soluta numquam nobis libero velit.
+        
+                        </p>
+                        <button class="adresses">Adresses</button>
+                        <button class="contactUs">Contact Us</button>
+                    </div>
+        
+                    <div id="sideDiv">
+                        <img id="sideImage" src="https://via.placeholder.com/420x300" alt="">
+        
+                    </div>
                 </div>
-            </div>
-
-            <div id="allProducts">
-                <div>
-                    <figure>
-                        <img src="https://via.placeholder.com/150x200" alt="">
-                        <figcaption>
-                            ghdfsaf
-
-                        </figcaption>
-                    </figure>
-                </div>
-
-                <div>
-
-                    <figure>
-                        <img src="https://via.placeholder.com/150x200" alt="">
-                        <figcaption>
-
-                        </figcaption>
-                    </figure>
-                </div>
-
-                <div>
-                    <figure>
-                        <img src="https://via.placeholder.com/150x200" alt="">
-                        <figcaption>
-
-                        </figcaption>
-                    </figure>
-                </div>
-
-                <div>
-                    <figure>
-                        <img src="https://via.placeholder.com/150x200" alt="">
-                        <figcaption>
-
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-
-        </section>
-
-        <section id="brief">
-            <h2>Brief About Us</h2>
-            <div>
-
-                <p id="sideText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, commodi repellendus. Asperiores corrupti sed ex et dolores sit facere repellat, nam perspiciatis blanditiis laudantium at molestias placeat ea quidem itaque Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Ratione unde, fugiat reprehenderit voluptatem magnam rem velit impedit sit totam incidunt culpa voluptas aspernatur quae voluptatum doloremque ipsa dolores dolor soluta! Lorem ipsum dolor sit
-                    amet, consectetur adipisicing elit. Nobis ratione, ea, dignissimos accusamus totam nemo nisi, exercitationem repellat laborum aspernatur nostrum. Fugit soluta quos consequatur quaerat, optio sequi minima dolores? Lorem ipsum dolor
-                    sit amet consectetur adipisicing elit. Eaque officia, veritatis aliquid, aperiam, molestias consequuntur repudiandae aliquam natus doloremque eveniet vero iste rerum architecto! Recusandae soluta numquam nobis libero velit.
-
-                </p>
-                <button class="adresses">Adresses</button>
-                <button class="contactUs">Contact Us</button>
-            </div>
-
-            <div id="sideDiv">
-                <img id="sideImage" src="https://via.placeholder.com/620x500" alt="">
-
-            </div>
-
-        </section>
-
-
-        <section id="contactUs">
-            <h2>
-                Contact Us
-            </h2>
-            <div>
-
-                <p id="contactParagh">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium harum culpa incidunt distinctio optio autem architecto at soluta perspiciatis, recusandae enim nesciunt excepturi accusamus mollitia temporibus voluptate eaque nihil amet.
-                </p>
-
-            </div>
-        </section>
-        <section id="contactForm">
-
-            <fieldset>
-                <legend>Contact Us Form </legend>
-                <form id='contactusForm'>
-                    <label for="Aluminum">Which Action Aluminum location are you Looking for ?</label>
-                    <input type="text" name="" id="Aluminum" required>
-                    <label class="ProductEnquiry">Product Enquiry</label>
-                    <input type="text" name="" id="ProductEnquiry" required>
-                    <label class="FirstName">First Name</label>
-                    <input type="text" name="" id="FirstName" required>
-                    <label class="LastName">Last Name</label>
-                    <input type="text" name="" id="LastName" required>
-                    <label class="Phone">Phone</label>
-                    <input type="tel" name="" id="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="07x-xxx-xxx" required>
-                    <label class="Email"> Email</label>
-                    <input type="Email" name="" id="Email" required>
-                    <input type="submit" value="submit" id="submitInput">
-                </form>
-                <textarea name="message" id="contactusForm" cols="30" rows="10">Enter your message here</textarea>
-            </fieldset>
-
-
-        </section>
+            </section>
+        
     </main>
 
 
     <footer id="footer">
-
+        <p>All rights reserved &copy; 2021</p>
     </footer>
+
     <script src="./js/app.js"></script>
     <script src="./js/homepageCSS.js"></script>
     <script src="./js/user.js"></script>
