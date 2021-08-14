@@ -79,6 +79,23 @@ header nav div a {
     display: flex;
 }
 
+.flexElement small {
+    position: relative;
+    right: 130px;
+    top: 27px;
+    font-size: 12px;
+}
+
+#fbSmall {
+    right: 160px;
+}
+
+.flexElement h2 {
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
 /* For the slider  */
 
 #mainSlider {
