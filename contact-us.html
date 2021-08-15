@@ -81,7 +81,7 @@
                 <input type="reset" value="Reset">
                 <input type="submit" value="Submit">
             </form>
-            <textarea name="message" id="contactusForm" cols="30" rows="10">Enter your message here</textarea>
+            <textarea name="message" id="contactusForm" cols="30" rows="10" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Enter your message here</textarea>
         </fieldset>
 
      </div>

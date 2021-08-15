@@ -25,7 +25,7 @@
   }
   
   .manual-btn{
-    border: 2px solid #FF5722;
+    border: 2px solid #ffffff;
     padding: 6px;
     border-radius: 10px;
     cursor: pointer;
@@ -36,7 +36,7 @@
   }
   
   .manual-btn:hover{
-    background: #FF5722;
+    background: #ffffff;
   }
   
   #radio1:checked ~ .first{

@@ -32,7 +32,7 @@ section {
 /* header styling */
 
 header {
-    background-color: hsla(217, 10%, 25%, 100%);
+    background-color: hsl(216, 18%, 16%);
     height: 70px;
     width: 100%;
     display: flex;
@@ -48,8 +48,9 @@ header nav {
     gap: 30px;
 }
 
-#navMenu {
-    margin-top: -5px;
+header nav div:nth-child(1) {
+    position: relative;
+    right: 28%;
 }
 
 header nav div a {
@@ -61,14 +62,24 @@ header nav div a {
     font-size: 14px;
     font-weight: 550;
     text-transform: uppercase;
-    letter-spacing: 1;
     transition: all 350ms;
 }
 
 header nav div a:hover, header nav div a:active {
-    letter-spacing: 3px;
+    background: hsla(0, 0%, 100%, 20%);
 }
   
+
+#navMenu button {
+    background-color: hsla(217, 10%, 25%, 0%);
+    position: absolute;
+    right: 16px;
+    z-index: 5;
+    border: 1px solid hsla(0, 0%, 100%, 0%);
+    border-radius: 50%;
+}
+
+
 
 .sticky {
     position: sticky;
@@ -76,21 +87,15 @@ header nav div a:hover, header nav div a:active {
     left: 0;
     width: 100%;
     transition: all 550ms;
-    background-color: hsla(217, 10%, 25%, 85%);;
+    background-color: hsla(216, 18%, 16%, 85%);
     height: 50px;
     width: 100%;
     padding-bottom: 10px;
 }
 
-.sticky a {
-    color: white;
-}
-  
 .sticky nav a:hover {
-    background: hsla(0, 0%, 100%, 50%);
+    background: hsla(0, 0%, 100%, 20%);
     position: relative;
-    border: hsla(0, 0%, 100%, 70%);
-    border-radius: 5%;
 }
 
 #usersBar {
@@ -122,7 +127,7 @@ header nav div a:hover, header nav div a:active {
     font-weight: bold;
 }
 
-  #mainHeader button, #brief button {
+#buttonsSection button, #brief button{
     padding: 9px 17px;
     color: #FFF;
     background-color: hsl(14, 100%, 57%);
@@ -249,6 +254,9 @@ header nav div a:hover, header nav div a:active {
 
 footer {
     height: 120px;
+    position: flex;
+    justify-content: center;
+        
 }
 
 #facebookText{
