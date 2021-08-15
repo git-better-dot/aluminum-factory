@@ -80,7 +80,6 @@ function submitHandler(event) {
   document.getElementById('SignUpBtn').style.display = 'none';
   //here we stoped the page from reloading
 
-
 }
 SingUpForm.addEventListener('submit', submitHandler1);
 
