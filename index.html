@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/user.css">
     <link rel="stylesheet" href="./css/mainimg.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Aluminum Souq</title>
 </head>
 
@@ -145,65 +147,64 @@
 
         </div>
 
-        <section id="Services">
-            <h2>
-                Products line & Services
-            </h2>
-            <div id="servicesContent">
-                <div id='Servicesinfo'>
-                    <h3 id="servicesHeader">Alucobond</h3>
-                    <p id="servicesPara">Alucobond is a composite panel consisting of two aluminum cover sheets and a
-                        fire-retardant or non-combustible mineral-filled core that stands for sustainable construction
-                        quality and the highest creative standards.</p>
-                    <button class="productsBtn">Products Line</button>
-                    <button class="servicesBtn">Services</button>
+            <section id="Services">
+                <h2 data-aos="zoom-in-up" data-aos-duration="1500">
+                    Products line & Services
+                </h2>
+                <div id="servicesContent">
+                    <div id='Servicesinfo'>
+                        <h3 id="servicesHeader">Alucobond</h3>
+                        <p id="servicesPara">Alucobond is a composite panel consisting of two aluminum cover sheets and a fire-retardant or non-combustible mineral-filled core that stands for sustainable construction quality and the highest creative standards.</p>
+                        <button class="productsBtn">Products Line</button>
+                        <button class="servicesBtn">Services</button>
+                    </div>
+    
+                    <div id="sideDiv">
+                        <img id="sideImage" src="https://via.placeholder.com/450x300" alt="">
+                        <button class="left slide" onclick="divSubDivs()">&#10094;</button>
+                        <button class="right slide" onclick="divPlusDivs()">&#10095;</button>
+    
+                    </div>
                 </div>
-
-                <div id="sideDiv">
-                    <img id="sideImage" src="https://via.placeholder.com/450x300" alt="">
-                    <button class="left slide" onclick="divSubDivs()">&#10094;</button>
-                    <button class="right slide" onclick="divPlusDivs()">&#10095;</button>
-
-                </div>
-            </div>
-
-        </section>
-        <section class="accessories">
-            <h2>Store</h2>
-            <h3>Best sellers</h3>
-            <div id="bestSeller">
-                <div>
-                    <figure>
-                        <img src="https://via.placeholder.com/150x200" alt="">
-
-                        <figcaption>Best seller 1</figcaption>
-                        <small>100 JD</small>
-                    </figure>
-                </div>
-
-                <div>
-
-                    <figure>
-                        <img src="https://via.placeholder.com/150x200" alt="">
-                        <figcaption>Best seller 2</figcaption>
-                        <small>100 JD</small>
-                    </figure>
-                </div>
-
-                <div>
-                    <figure>
-                        <img src="https://via.placeholder.com/150x180" alt="">
-                        <figcaption>Best seller 3</figcaption>
-                        <small>100 JD</small>
-                    </figure>
-                </div>
-
-                <div>
-                    <figure>
-                        <img src="https://via.placeholder.com/150x200" alt="">
-                        <figcaption>Best seller 4</figcaption>
-                        <small>100 JD</small>
-                    </figure>
+    
+            </section>
+            <section id="accessories" class="accessories">
+                <h2>Store</h2>
+                <h3>Best sellers</h3>
+                <div id="bestSeller">
+                    <div>
+                        <figure>
+                            <img src="https://via.placeholder.com/150x200" alt="">
+    
+                            <figcaption>Best seller 1</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
+    
+                    <div>
+    
+                        <figure>
+                            <img src="https://via.placeholder.com/150x200" alt="">
+                            <figcaption>Best seller 2</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
+    
+                    <div>
+                        <figure>
+                            <img src="https://via.placeholder.com/150x180" alt="">
+                            <figcaption>Best seller 3</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
+    
+                    <div>
+                        <figure>
+                            <img src="https://via.placeholder.com/150x200" alt="">
+                            <figcaption>Best seller 4</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
                 </div>
             </div>
 
@@ -285,6 +286,11 @@
     <script src="./js/homepageCSS.js"></script>
     <script src="./js/user.js"></script>
     <script src="./js/mainimg.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
 
 </body>
 
