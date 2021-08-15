@@ -30,7 +30,7 @@ section {
 /* header styling */
 
 header {
-    background-color: hsla(217, 10%, 25%, 100%);
+    background-color: hsl(216, 18%, 16%);
     height: 70px;
     width: 100%;
     display: flex;
@@ -46,11 +46,12 @@ header nav {
     gap: 30px;
 }
 
-#navMenu {
-    margin-top: -5px;
+header nav div:nth-child(1) {
+    position: relative;
+    right: 28%;
 }
 
-header nav div a {
+header nav div a, footer ul li a {
     position: relative;
     top: 20%;
     text-decoration: none;
@@ -59,13 +60,26 @@ header nav div a {
     font-size: 14px;
     font-weight: 550;
     text-transform: uppercase;
-    letter-spacing: 1;
     transition: all 350ms;
 }
+
 
 header nav div a:hover,
 header nav div a:active {
     letter-spacing: 3px;
+
+header nav div a:hover, header nav div a:active {
+    background: hsla(0, 0%, 100%, 20%);
+
+}
+
+#navMenu button {
+    background-color: hsla(217, 10%, 25%, 0%);
+    position: absolute;
+    right: 16px;
+    z-index: 5;
+    border: 1px solid hsla(0, 0%, 100%, 0%);
+    border-radius: 50%;
 }
 
 .sticky {
@@ -74,22 +88,27 @@ header nav div a:active {
     left: 0;
     width: 100%;
     transition: all 550ms;
+
     background-color: hsla(217, 10%, 25%, 85%);
     ;
+
+    background-color: hsla(216, 18%, 16%, 85%);
+
     height: 50px;
     width: 100%;
     padding-bottom: 10px;
 }
 
+
 .sticky a {
     color: white;
 }
 
+
+
 .sticky nav a:hover {
-    background: hsla(0, 0%, 100%, 50%);
+    background: hsla(0, 0%, 100%, 20%);
     position: relative;
-    border: hsla(0, 0%, 100%, 70%);
-    border-radius: 5%;
 }
 
 #usersBar {
@@ -121,8 +140,29 @@ header nav div a:active {
     font-weight: bold;
 }
 
+
 #mainHeader button,
 #brief button {
+
+#mainheader {
+    background-color: #222831;
+}
+
+#myDIV {
+    width: 35%;
+    height: auto;
+    padding: 25px 0;
+    text-align: center;
+    background-color: #222831;
+    margin-top: 20px;
+}
+
+#facebookText {
+    margin-left: 10px;
+}
+
+#buttonsSection button, #brief button{
+
     padding: 9px 17px;
     color: #FFF;
     background-color: hsl(14, 100%, 57%);
@@ -180,7 +220,7 @@ header nav div a:active {
     margin: 40px 50px 0px 40px;
     gap: 50px;
     padding: 25px;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 
 #Servicesinfo {
@@ -244,21 +284,44 @@ header nav div a:active {
 }
 
 
+
+figure {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+figure small {
+    color: #04AA6D;
+}
+
+
 /* brief content */
 
 #brief {
-    background-image: url('../img/companyBackground.png');
+    background-image: url('../img/companyBackgroundBlurry.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 30px;
+
     /* filter: blur(8px); */
+
 }
 
-footer {
-    height: 120px;
+#brief h2 {
+    color: white;
+    line-height: 20px;
+
 }
+
+#brief button {
+    position: relative;
+    top: 20%;
+    margin-right: 20px;
+}
+
 
 #facebookText {
     margin-left: 10px;
@@ -266,13 +329,28 @@ footer {
 
 #mainheader {
     background-color: #222831;
+
+#sideText {
+    background-color: hsla(0, 0%, 73%, 50%);
+    padding: 10px;
+    font-size: 17px;
 }
 
-#myDIV {
-    width: 35%;
-    height: auto;
-    padding: 25px 0;
-    text-align: center;
-    background-color: #222831;
-    margin-top: 20px;
+
+footer {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831; 
+    color: white;
+
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    gap: 30px;
 }
