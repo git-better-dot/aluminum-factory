@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap');
+/* font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+.container{
+    font-family: 'Oswald', sans-serif;
+}
+section h2{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin: 10px;
+}
+section p{
+    font-size: 20px;
+    text-indent: 50px;
+    line-height: 1.8;
+    -webkit-text-fill-color: #212730; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(37, 37, 37);
+    font-family: 'Merriweather', serif;
+}
+.border {
+    border-top-left-radius: 37px 140px;
+    border-top-right-radius: 23px 130px;
+    border-bottom-left-radius: 110px 19px;
+    border-bottom-right-radius: 120px 24px;
+    display: block;
+    position: relative;
+    border: solid 3px #ff7300;
+    padding: 90px 200px;
+    max-width: 1000px;
+    width: 100%;
+    margin: 40px 30px 0;
+    font-size: 17px;
+    line-height: 28px;
+    transform: rotate(-1deg);
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+    transition: all 0.13s ease-in;
+    display: grid;
+    grid-template-columns: auto auto ;
+    gap: 20px;
+  }
+  
+  .border:hover {
+    transform: translateY(-10px) rotate(1deg);
+    box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .border:hover .border {
+    transform: translateY(4px) rotate(-2deg);
+  }
+  
+  #alucobond{
+    background-image: linear-gradient(
+        to bottom,
+        rgba(108, 112, 112, 0.89),
+        rgba(255, 255, 255, 0.664)
+      ),url("../img/services/Alucobond.jpg");
+  }
+  #Pergola{
+    background-image: linear-gradient(
+        to bottom,
+        rgba(184, 189, 189, 0.795),
+        rgba(255, 255, 255, 0.664)
+      ),url("../img/services/alpergola.jpg");
+
+  }
+  #Folding{
+    background-image: linear-gradient(
+        to bottom,
+        rgba(175, 179, 179, 0.795),
+        rgba(255, 255, 255, 0.664)
+      ),url("../img/services/folding.jpg");
+
+  }
+  #Windows{
+    background-image: linear-gradient(
+        to bottom,
+        rgba(140, 143, 143, 0.795),
+        rgba(255, 255, 255, 0.664)
+      ),url("../img/services/slidewindows.jpg");
+
+  }
+
+
+
+
+  html {
+    margin: 0;
+    padding: 0;
+    
+    position: absolute;
+    background-color: #EFEFEF;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+/* section {
+    height: 100vh;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+} */
+
+header {
+    background-color: hsl(216, 18%, 16%);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+    transition: all ease-in-out 600ms
+}
+
+header nav {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+}
+
+header nav div:nth-child(1) {
+    position: relative;
+    right: 18%;
+}
+
+header nav div a {
+    position: relative;
+    top: 20%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 550;
+    text-transform: uppercase;
+    transition: all 350ms;
+}
+
+header nav div a:hover, header nav div a:active {
+    background: hsla(0, 0%, 100%, 20%);
+}
+  
+
+#navMenu button {
+    background-color: hsla(217, 10%, 25%, 0%);
+    position: absolute;
+    right: 16px;
+    z-index: 5;
+    border: 1px solid hsla(0, 0%, 100%, 0%);
+    border-radius: 50%;
+}
+
+
+#buttonsSection button {
+    padding: 9px 17px;
+    color: #FFF;
+    background-color: hsl(14, 100%, 57%);
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    /* outline-color: rgba(255, 255, 255, 0.5); */
+    outline-color: hsla(14, 100%, 57%, 0.5);
+    outline-offset: 0px;
+  }
+  
+  #mainHeader button:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.1);
+    outline-offset: 15px;
+    outline-color: rgba(255, 255, 255, 0);
+  }
+
+
+  #myDIV {
+    width: 35%;
+    height: auto;
+    padding: 25px 0;
+    text-align: center;
+    background-color: #222831;
+    margin-top: 20px;
+}
+
+
+/* FOOTER */
+
+footer {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831; 
+    color: white;
+    margin-top: 20px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    gap: 30px;
+    list-style: none;
+}
+
+footer ul li a {
+    position: relative;
+    top: 20%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 550;
+    text-transform: uppercase;
+    transition: all 350ms;
+}
+html {
+
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    background-color: #EFEFEF;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+
+}
+
+/* section {
+    height: 100vh;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+} */
+
+
+/* header styling */
+
+header {
+    background-color: hsl(216, 18%, 16%);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+    transition: all ease-in-out 600ms
+}
+
+header nav {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+}
+
+header nav div:nth-child(1) {
+    position: relative;
+    right: 28%;
+}
+
+header nav div a, footer ul li a {
+    position: relative;
+    top: 20%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 550;
+    text-transform: uppercase;
+    transition: all 350ms;
+}
+
+header nav div a:hover, header nav div a:active {
+    background: hsla(0, 0%, 100%, 20%);
+}
+  
+
+#navMenu button {
+    background-color: hsla(217, 10%, 25%, 0%);
+    position: absolute;
+    right: 16px;
+    z-index: 5;
+    border: 1px solid hsla(0, 0%, 100%, 0%);
+    border-radius: 50%;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 550ms;
+    background-color: hsla(216, 18%, 16%, 85%);
+    height: 50px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.sticky nav a:hover {
+    background: hsla(0, 0%, 100%, 20%);
+    position: relative;
+}
+
+#usersBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background-color: #b9b9b9;
+}
+
+#usersBar span {
+    display: flex;
+}
+
+.flexElement small {
+    position: relative;
+    right: 130px;
+    top: 27px;
+    font-size: 12px;
+}
+
+#fbSmall {
+    right: 160px;
+}
+
+.flexElement h2 {
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#mainheader {
+    background-color: #222831;
+}
+
+#myDIV {
+    width: 35%;
+    height: auto;
+    padding: 25px 0;
+    text-align: center;
+    background-color: #222831;
+    margin-top: 20px;
+}
+
+#facebookText {
+    margin-left: 10px;
+}
+
+#buttonsSection button, #brief button{
+    padding: 9px 17px;
+    color: #FFF;
+    background-color: hsl(14, 100%, 57%);
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    /* outline-color: rgba(255, 255, 255, 0.5); */
+    outline-color: hsla(14, 100%, 57%, 0.5);
+    outline-offset: 0px;
+  }
+  
+  #mainHeader button:hover, #brief button:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.1);
+    outline-offset: 15px;
+    outline-color: rgba(255, 255, 255, 0);
+  }
+
+/* For the slider  */
+
+#mainSlider {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 40%; 
+}
+
+/* services section */
+
+
+#Services h2, .accessories h2, #brief h2 {
+    color: #222831;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#servicesContent, #breifContent {
+    display: flex;
+    margin: 40px 50px 0px 40px;
+    gap: 50px;
+    padding: 25px;
+    border: 1px solid white;
+}
+
+#Servicesinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#Servicesinfo h3 {
+    color: #222831;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#Servicesinfo p, #breifContent p {
+    color: #393E46;
+    line-height: 20px;
+}
+
+#Servicesinfo button {
+    height: 50px;
+    width: 130px;
+    border: 1px solid #222831;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    color:#222831;
+    text-align:center;
+}
+
+/* accessories section  */
+
+.accessories {
+   /* position: relative;
+    top: -150px;*/
+}
+
+.accessories h3 {
+    margin: 30px 0px 20px 20px;
+    color: #222831;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#bestSeller, #allProducts {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#bestSeller img, #allProducts img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+figure {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+figure small {
+    color: #04AA6D;
+}
+
+/* brief content */
+
+#brief {
+    background-image: url('../img/companyBackgroundBlurry.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+}
+
+#brief h2 {
+    color: white;
+    line-height: 20px;
+}
+
+#brief button {
+    position: relative;
+    top: 20%;
+    margin-right: 20px;
+}
+
+#sideText {
+    background-color: hsla(0, 0%, 73%, 50%);
+    padding: 10px;
+    font-size: 17px;
+}
+
+
+footer {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222831; 
+    color: white;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 30px;
+    gap: 30px;
+}
