@@ -2,7 +2,7 @@
 let reverse;
 let count = 0;
 let img = document.getElementById('main-img');
-let imag = ['../img/slide1.png', '../img/slide2.png', '../img/slide3.png', '../img/slide4.gif'];
+let imag = ['./img/slide1.png', './img/slide2.png', './img/slide3.png', './img/slide4.gif'];
 let count2 = imag.length-1;
 img.src = imag[count];
 
