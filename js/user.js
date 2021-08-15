@@ -120,13 +120,12 @@ function submitHandler1(event) {
 
 
 function UsersData(username, password, email, gender, question, answer) {
-    this.username = username;
-    this.password = password;
+    this.username = userNameS;
+    this.password = passWordS;
     this.email = email;
     this.gender = gender;
     this.question = question;
     this.answer = answer;
-    UsersData.allUsers.push(this);
 }
 
 UsersData.allUsers = [];
@@ -141,15 +140,15 @@ function savedUsers() {
 
 
     let userData = new UsersData(userNameS, passWordS, email, gender, question, anwser);
-
-    if (localStorage.users) {
-        usersArry.push(JSON.parse(localStorage.getItem('users')));
-        usersArry.push(userData = new UsersData(userNameS, passWordS, email, gender, question, anwser));
-        localStorage.users = JSON.stringify(usersArry);
-    } else {
-        localStorage.setItem('users', JSON.stringify(userData));
+    let Arr = [];
+    if (localStorage.users == null) {
+        localStorage.setItem('users', '[]');
     }
+    usersArry = JSON.parse(localStorage.getItem('users'));
 
+    Arr.push(userData = new UsersData(userNameS, passWordS, email, gender, question, anwser));
+    usersArry.push(Arr);
+    localStorage.users = JSON.stringify(usersArry);
 }
 
 // function userLogChecked() {
