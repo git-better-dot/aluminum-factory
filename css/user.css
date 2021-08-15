@@ -1,5 +1,9 @@
 /* here we have the css for the buttons it needs somework */
 
+html {
+    filter: blur(10%);
+}
+
 .logInBtn {
     padding: 16px 20px;
     border: none;
@@ -94,4 +98,22 @@
     display: inline;
     margin-left: 10px;
     vertical-align: middle;
+}
+
+h1 {
+    font-weight: bold;
+    margin: 10px 0px 20px 0px;
+}
+
+b, p {
+    margin-right: 2px;
+    font-size: 15px;
+}
+
+#Male, #Female {
+    font-size: 15px;
+} 
+
+.blur {
+    filter: blur(5px); 
 }
