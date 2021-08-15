@@ -6,40 +6,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/ac.css">
+    <link rel="stylesheet" href="./css/user.css">
+    <link rel="stylesheet" href="./css/mainimg.css">
 </head>
 
 <body>
     <header id="mainHeader">
 
-        <img src=" https://via.placeholder.com/200x70/000000">
+        <img src="./img/logo.png" style="padding: 7px;">
         <nav id="navBar">
             <div>
-                <a href="index.html">Home</a>
-                <a href=""> Products & Services</a>
+                <a href="./index.html">Home</a>
+                <a href="./product/product.html"> Products & Services</a>
                 <a href="">Accessories</a>
-                <a href="">About Us</a>
+                <a href="./contact-us.html">About & Contact</a>
             </div>
 
             <div id="buttonsSection">
-                <button id="logInBtn" onclick="myLogInFunction()">log in</button>
-                <button id="SignUpBtn" onclick="mySignUpFunction()">sign up</button>
+                <button id="logInBtn" onclick="myLogInFunction(); myBlurFunction(1)">log in</button>
+                <button style="margin-right: 30px;" id="SignUpBtn" onclick="mySignUpFunction()">sign up</button>
+            </div>
+            <div id="navMenu">
+                <button style="background-color: hsla(217, 10%, 25%, 0%);padding-top: 4px;position: absolute;right: 16px;z-index: 5;" onclick="myFunction()"><img src="./img/muneSide.png" alt="menu" height="30" width="30"></button>
+                <div id="myDIV" style="position: absolute;top: -5px;right: 16px;display: block;z-index: 2;">
+                <a style="display: block;" href="./index.html">Home</a>
+                <a style="display: block;" href="./product/product.html">PRODUCTS LINE</a>
+                <a style="display: block;" href="">SERVICES</a>
+                <a style="display: block;" href="">STORE</a>
+                <a style="display: block;" href="./contact-us.html">ABOUT & CONTACT</a>
+                </div>
+
             </div>
 
-            <div id="navMenu">
-                <img src="https://via.placeholder.com/50x50" alt="">
-            </div>
         </nav>
 
     </header>
     <main>
-        <section>
-            <div>
 
+        <!-- this is the log in form -->
+        <div class="form-popup" id="LoginForm">
+            <form class="form-container" id="LoginForm">
+                <h1>Login</h1>
+                <!-- this is the username label and field -->
+                <label for="Username"><b>Username</b></label>
+                <input type="text" id="username" placeholder="Enter Username" name="Username" required>
+                <!-- this is the password label and field -->
+                <label for="psw"><b>Password</b></label>
+                <input type="password" id="password" placeholder="Enter Password" name="psw" required>
+                <!-- this is the forgot password span it needs somework btw -->
+                <span class="psw">Forgot <a href="#">password?</a></span>
+                <!-- here there is the submit button and the close button -->
+                <button type="submit" value="login" class="btn">Login</button>
+                <button type="button" class="btn cancel" value="Login" onclick="closeForm()">Close </button>
+
+            </form>
+        </div>
+        <div class="form-popup" id="SingUpForm">
+            <form class="form-container" id="SingUpForm">
+                <h1>Sign up</h1>
+                <!-- this is the username label and field -->
+                <label for="Username"><b>Enter Username</b></label>
+                <input type="text" id="usernameS" placeholder="Enter Username" name="Username" required>
+
+                <!-- this is the password label and field -->
+                <label for="psw"><b>Enter Password</b></label>
+                <input type="password" id="passwordS" placeholder="Enter Password" name="psw" required>
+                <label for="Email"><b>Enter Email</b></label>
+                <input type="text" id="EmailS" placeholder="Enter Email" name="Email" required>
+                <p>Select your Gender:</p>
+                <input type="radio" id="Gender" name="Gender" value="Male">
+                <label for="Male">Male</label><br>
+                <input type="radio" id="Gender" name="Gender" value="Female">
+                <label for="Female">Female</label><br>
+                <label for="cars">Choose a Security Question :</label>
+
+                <select id="Questions">
+                    <option value="favoriteFriend">What was your favorite school friend name?</option>
+                    <option value="favoriteMovie">What’s your favorite movie?</option>
+                    <option value="firstCar">What was your first car?</option>
+                    <option value="astrologicalSign" selected>What is your astrological sign?</option>
+                </select>
+                <input type="text" id="yourAnwser" placeholder="Enter yourAnwser" name="yourAnwser" required>
+
+                <!-- here there is the submit button and the close button -->
+                <button type="submit" value="Register" class="btn">Sign up</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+            </form>
+        </div>
+
+        <section id="about">
+            <h3>About Us</h3>
+            <p><br/>Aluminum Souq represents over 60% of bauxite, alumina and aluminium production in Middle East. <br/>Its key objectives are to:</p>
+            <ol>
+                <li>Increase the market for aluminium by enhancing world-wide awareness of its unique and valuable qualities.</li>
+                <li>Provide the global forum for aluminium producers on matters of common concern and liaising with regional and national aluminium associations to achieve efficient and cost effective co-operation.</li>
+                <li>Identify issues of relevance to the production, use and recycling of aluminium and promoting appropriate research and other action concerning them.</li>
+                <li>Encourage and assisting continuous progress in the healthy, safe and environmentally sound production of aluminium.</li>
+                <li>Collect statistical and other relevant information and communicating it to the industry and its principle stakeholders.</li>
+                <li>Communicate the views and positions of the aluminium industry to international agencies and other relevant parties.</li>
+            </ol>
+            <p>Since its foundation in 1986, the members of the AlS  have been companies engaged in the production of bauxite, alumina, aluminium, the recycling of aluminium, or fabrication of aluminium or as joint venture partners in such.  
+
+                <br/>We have many customers in other countries. Like: Saudi Arabia, UAE, Bahrin, and more.
+                <br/>We have the high quality goods and the best price. Choosing us is the best decision.
+                
+                <br/>The work of the IAI is overseen by its Board of Directors, with each member company having a representative at senior management level, usually chairman or CEO. The Board of Directors meets twice a year, with all members entitled to vote and to be represented at the Annual General Meeting.</p>
+        </section>
+
+        <img id="tinyHero" src="./img/slide3.png" alt="" width="100%">
+
+        <section id="contact">
                 <br/>
-                <h3>
-                    Contact Us
-                </h3>
-            </div>
+                <h3>Contact Us</h3>
 
 
             <div>
@@ -82,7 +163,7 @@
                         <input type="reset" value="Reset">
                         <input type="submit" value="Submit">
                     </form>
-                    <textarea name="message" id="message" cols="30" rows="10">Enter your message here</textarea>
+                    <textarea name="message" id="message" cols="30" rows="10" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Enter your message here</textarea>
                 </fieldset>
 
             </div>
@@ -91,10 +172,23 @@
 
     </main>
 
-    <footer>
+    <footer id="footer">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./product/product.html">PRODUCTS LINE</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">STORE</a></li>
+            <li><a href="./contact-us.html">ABOUT US</a></li>
+            <li><a href="./contact-us.html">CONTACT US</a></li>
+        </ul>
         <p>All rights reserved &copy; 2021</p>
     </footer>
+
     <script src="./js/contact.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="./js/homepageCSS.js"></script>
+    <script src="./js/user.js"></script>
+    <script src="./js/mainimg.js"></script>
 </body>
 
 </html>
