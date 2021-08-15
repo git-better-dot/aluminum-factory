@@ -114,13 +114,91 @@ h3 {
     font-size: 22px;
     font-weight: bold;
     text-transform: uppercase;
+    border-bottom:2px solid #FF5722;
+    padding-bottom: 5px;
+    
 }
 
 #about p {
     text-align: justify;
+    font-weight: bold;
     font-size: 16px;
     line-height: 25px;
-    margin: 10px;
+    text-align: justify;
+    margin: 0px 30px;
+    color: hsl(217, 10%, 25%);
+}
+
+#about ol {
+    text-align: justify;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: justify;
+    margin: 0px 90px;
+    padding: 10px;
+    list-style-type: decimal;
+    color: hsl(217, 10%, 25%);
+}
+
+/* Tiny hero image */
+
+#tinyHero {
+    height: 400px;
+    position: relative;
+    filter: blur(2px);
+}
+
+/* Contact us form */
+ 
+#contact {
+	padding: 12px 24px 24px 24px;
+	background: hsl(217, 10%, 25%);
+	border-radius: 4px;
+    width: 70%;
+    height: 50%;
+    position: relative;
+    left: 10%;
+    color: white; 
+    margin-bottom: 30px;
+}
+
+#contact h3 {
+    color: white;
+}
+
+label {
+	font-size: 16px;
+    color: white; 
+}
+
+input[type=text], input[type=tel], input[type=email],textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit], input[type=reset] {
+	background-color: hsl(14, 100%, 57%);
+	color: white;
+	border: 0;
+	padding: 12px 24px;
+	border-radius: 4px;
+	position: relative;
+    margin-right: 20px;
+	text-align: center;
+}
+
+input[type=submit]:focus {
+	background: #49b94d;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+	background: hsl(14, 100%, 47%);
 }
 
 /* FOOTER */
