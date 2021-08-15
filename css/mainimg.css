@@ -23,10 +23,17 @@
     display: flex;
     justify-content: center;
     /* bottom: 40px; */
+
 }
 
 .manual-btn {
     border: 2px solid #FF5722;
+
+  }
+  
+  .manual-btn{
+    border: 2px solid #ffffff;
+
     padding: 6px;
     border-radius: 10px;
     cursor: pointer;
@@ -35,6 +42,7 @@
 
 .manual-btn:not(:last-child) {
     margin-right: 40px;
+
 }
 
 .manual-btn:hover {
@@ -42,6 +50,15 @@
 }
 
 #radio1:checked~.first {
+
+  }
+  
+  .manual-btn:hover{
+    background: #ffffff;
+  }
+  
+  #radio1:checked ~ .first{
+
     margin-left: 0;
 }
 
@@ -55,6 +72,7 @@
 
 #radio4:checked~.first {
     margin-left: -60%;
+
 }
 
 .buttonLeft,
@@ -85,3 +103,45 @@
 
 
 /*css for automatic navigation*/
+
+  }
+
+ .buttonLeft, .buttonRight {
+   background-color: hsla(0, 0%, 100%, 30%);
+   z-index: 3;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   top: 220px;
+   position: absolute;
+   border: 1px solid hsla(0, 0%, 100%, 40%);
+   color: #222831;
+ }
+
+ .buttonLeft:hover, .buttonRight:hover, .divButtonLeft:hover, .divButtonRight:hover {
+  background-color: hsla(0, 0%, 100%, 60%);
+  color: #FF5722;
+ }
+
+ .buttonLeft {
+   left: 15px;
+ }
+
+ .buttonRight {
+   right: 15px;
+ }
+
+ .divButtonLeft, .divButtonRight {
+   background-color: hsla(0, 0%, 100%, 30%);
+   z-index: 3;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   top: 220px;
+   border: 1px solid hsla(0, 0%, 100%, 40%);
+   color: #222831;
+ }
+
+
+  /*css for automatic navigation*/
+

@@ -18,7 +18,7 @@
 
     <header id="mainHeader">
 
-        <img src=" https://via.placeholder.com/200x70/000000">
+        <img src="./img/logo.png" style="padding: 7px;">
         <nav id="navBar">
             <div>
                 <a href="#mainSlider">Home</a>
@@ -28,18 +28,26 @@
             </div>
 
             <div id="buttonsSection">
-                <button id="logInBtn" onclick="myLogInFunction()">log in</button>
+                <button id="logInBtn" onclick="myLogInFunction(); myBlurFunction(1)">log in</button>
                 <button style="margin-right: 30px;" id="SignUpBtn" onclick="mySignUpFunction()">sign up</button>
             </div>
             <div id="navMenu">
-                <button style="background-color: hsla(217, 10%, 25%, 100%);padding-top: 4px;position: absolute;right: 16px;z-index: 5;" onclick="myFunction()"><img src="./img/muneSide.png" alt="menu" height="30" width="30"></button>
+                <button style="background-color: hsla(217, 10%, 25%, 0%);padding-top: 4px;position: absolute;right: 16px;z-index: 5;" onclick="myFunction()"><img src="./img/muneSide.png" alt="menu" height="30" width="30"></button>
                 <div id="myDIV" style="position: absolute;top: -5px;right: 16px;display: block;z-index: 2;">
+
                     <a style="display: block;" href="">Home</a>
                     <a style="display: block;" href="">PRODUCTS LINE</a>
                     <a style="display: block;" href="">SERVICES</a>
                     <a style="display: block;" href="">STORE</a>
                     <a style="display: block;" href="">ADRESSES</a>
                     <a style="display: block;" href="./contact-us.html">CONTACT</a>
+
+                <a style="display: block;" href="">Home</a>
+                <a style="display: block;" href="./product/product.html">PRODUCTS LINE</a>
+                <a style="display: block;" href="">SERVICES</a>
+                <a style="display: block;" href="">STORE</a>
+                <a style="display: block;" href="./contact-us.html">ABOUT & CONTACT</a>
+
                 </div>
 
             </div>
@@ -147,6 +155,7 @@
 
         </div>
 
+
         <section id="Services">
             <h2 data-aos="zoom-in-up" data-aos-duration="1500">
                 Products line & Services
@@ -179,6 +188,66 @@
                         <figcaption>Best seller 1</figcaption>
                         <small>100 JD</small>
                     </figure>
+
+            <section id="Services">
+                <h2 data-aos="zoom-in-up" data-aos-duration="1500">
+                    Products line & Services
+                </h2>
+                <div id="servicesContent">
+                    <div id='Servicesinfo'>
+                        <h3 id="servicesHeader">Alucobond</h3>
+                        <p id="servicesPara">Alucobond is a composite panel consisting of two aluminum cover sheets and a fire-retardant or non-combustible mineral-filled core that stands for sustainable construction quality and the highest creative standards.</p>
+                        <button class="productsBtn">Products Line</button>
+                        <button class="servicesBtn">Services</button>
+                    </div>
+    
+                    <div id="sideDiv">
+                        <img id="sideImage" src="https://via.placeholder.com/450x300" alt="">
+                        <button class="divButtonLeft" onclick="divSubDivs()">&#10094;</button>
+                        <button class="divButtonRight" onclick="divPlusDivs()">&#10095;</button>
+    
+                    </div>
+                </div>
+    
+            </section>
+            <section id="accessories" class="accessories">
+                <h2 data-aos="zoom-in-up" data-aos-duration="1500">Store</h2>
+                <h3>Best sellers</h3>
+                <div id="bestSeller">
+                    <div>
+                        <figure>
+                            <img src="https://via.placeholder.com/150x200" alt="">
+    
+                            <figcaption>Best seller 1</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
+    
+                    <div>
+    
+                        <figure>
+                            <img src="https://via.placeholder.com/150x200" alt="">
+                            <figcaption>Best seller 2</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
+    
+                    <div>
+                        <figure>
+                            <img src="https://via.placeholder.com/150x180" alt="">
+                            <figcaption>Best seller 3</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
+    
+                    <div>
+                        <figure>
+                            <img src="https://via.placeholder.com/150x200" alt="">
+                            <figcaption>Best seller 4</figcaption>
+                            <small>100 JD</small>
+                        </figure>
+                    </div>
+
                 </div>
 
                 <div>
@@ -247,7 +316,7 @@
         </section>
 
         <section id="brief">
-            <h2>Who are we?</h2>
+            <h2 data-aos="zoom-in-up" data-aos-duration="1500">Who are we?</h2>
             <div id="breifContent">
                 <div>
                     <p id="sideText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, commodi repellendus. Asperiores corrupti sed ex et dolores sit facere repellat, nam perspiciatis blanditiis laudantium at molestias placeat ea quidem itaque Lorem ipsum
@@ -257,7 +326,7 @@
                         velit.
 
                     </p>
-                    <button class="adresses">Adresses</button>
+                    <button class="adresses">About Us</button>
                     <button class="contactUs">Contact Us</button>
                 </div>
 
@@ -272,6 +341,14 @@
 
 
     <footer id="footer">
+        <ul>
+            <li><a shref="">Home</a></li>
+            <li><a href="./product/product.html">PRODUCTS LINE</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">STORE</a></li>
+            <li><a href="./contact-us.html">ABOUT US</a></li>
+            <li><a href="./contact-us.html">CONTACT US</a></li>
+        </ul>
         <p>All rights reserved &copy; 2021</p>
     </footer>
 
