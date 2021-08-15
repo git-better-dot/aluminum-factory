@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="./css/ac.css">
     <link rel="stylesheet" href="./css/user.css">
     <link rel="stylesheet" href="./css/mainimg.css">
-
 </head>
 
 <body>
@@ -32,11 +31,11 @@
             <div id="navMenu">
                 <button style="background-color: hsla(217, 10%, 25%, 0%);padding-top: 4px;position: absolute;right: 16px;z-index: 5;" onclick="myFunction()"><img src="./img/muneSide.png" alt="menu" height="30" width="30"></button>
                 <div id="myDIV" style="position: absolute;top: -5px;right: 16px;display: block;z-index: 2;">
-                <a style="display: block;" href="./index.html">Home</a>
-                <a style="display: block;" href="./product/product.html">PRODUCTS LINE</a>
-                <a style="display: block;" href="">SERVICES</a>
-                <a style="display: block;" href="">STORE</a>
-                <a style="display: block;" href="./contact-us.html">ABOUT & CONTACT</a>
+                    <a style="display: block;" href="./index.html">Home</a>
+                    <a style="display: block;" href="./product/product.html">PRODUCTS LINE</a>
+                    <a style="display: block;" href="">SERVICES</a>
+                    <a style="display: block;" href="">STORE</a>
+                    <a style="display: block;" href="./contact-us.html">ABOUT & CONTACT</a>
                 </div>
 
             </div>
@@ -100,11 +99,7 @@
 
         <section id="about">
             <h3>About Us</h3>
-            
-            <p><br/> &nbsp; &nbsp; Aluminum Souq represents over 60% of bauxite, alumina and aluminium production in Middle East.
-                Since its foundation in 1986, the members of the AlS have been companies engaged in the production of bauxite, alumina, aluminium, the recycling of aluminium, or fabrication of aluminium or as joint venture partners in such.
-
-                <br/>Its key objectives are to:</p>
+            <p><br/>Aluminum Souq represents over 60% of bauxite, alumina and aluminium production in Middle East. <br/>Its key objectives are to:</p>
             <ol>
                 <li>Increase the market for aluminium by enhancing world-wide awareness of its unique and valuable qualities.</li>
                 <li>Provide the global forum for aluminium producers on matters of common concern and liaising with regional and national aluminium associations to achieve efficient and cost effective co-operation.</li>
@@ -113,21 +108,25 @@
                 <li>Collect statistical and other relevant information and communicating it to the industry and its principle stakeholders.</li>
                 <li>Communicate the views and positions of the aluminium industry to international agencies and other relevant parties.</li>
             </ol>
-            <p>&#9733; We have many customers in other countries. Like: Saudi Arabia, UAE, Bahrin, and more.
-                <br/>&#9733; We have the high quality goods and the best price. Choosing us is the best decision.
-                <br/>The work of the IAI is overseen by its Board of Directors, with each member company having a representative at senior management level, usually chairman or CEO. The Board of Directors meets twice a year, with all members entitled to vote and to be represented at the Annual General Meeting.</p>
+            <p>Since its foundation in 1986, the members of the AlS have been companies engaged in the production of bauxite, alumina, aluminium, the recycling of aluminium, or fabrication of aluminium or as joint venture partners in such.
+
+                <br/>We have many customers in other countries. Like: Saudi Arabia, UAE, Bahrin, and more.
+                <br/>We have the high quality goods and the best price. Choosing us is the best decision.
+
+                <br/>The work of the IAI is overseen by its Board of Directors, with each member company having a representative at senior management level, usually chairman or CEO. The Board of Directors meets twice a year, with all members entitled
+                to vote and to be represented at the Annual General Meeting.</p>
         </section>
 
-        <div id="tinyHero">
-            <img  src="./img/slide3.png" alt="" width="100%">
-        </div>
-   
+        <img id="tinyHero" src="./img/slide3.png" alt="" width="100%">
+
         <section id="contact">
-                <h3>Contact Us</h3>
+            <br/>
+            <h3>Contact Us</h3>
+
 
             <div>
                 <fieldset>
-                    <legend><br/><br/></legend>
+                    <legend>Contact Us Form </legend>
                     <form id='contactusForm'>
                         <label for="country"> Store Location </label>
                         <select id="country" name="country">
@@ -152,20 +151,20 @@
                     <option value="Yemen">Yemen</option>
                  </select>
 
-                        <label for="ProductEnquiry">Product Enquiry</label>
+                        <label class="ProductEnquiry">Product Enquiry</label>
                         <input type="text" name="" id="ProductEnquiry" required>
-                        <label for="FirstName">First Name</label>
+                        <label class="FirstName">First Name</label>
                         <input type="text" name="" id="FirstName" required>
-                        <label for="LastName">Last Name</label>
+                        <label class="LastName">Last Name</label>
                         <input type="text" name="" id="LastName" required>
-                        <label for="Phone">Phone</label>
+                        <label class="Phone">Phone</label>
                         <input type="tel" name="" id="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="07x-xxx-xxx" required>
-                        <label for="Email">Email</label>
-                        <input type="email" name="" id="Email" required>
-                        <textarea name="message" id="message" cols="30" rows="10" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Enter your message here</textarea>
+                        <label class="Email"> Email</label>
+                        <input type="Email" name="" id="Email" required>
                         <input type="reset" value="Reset">
                         <input type="submit" value="Submit">
                     </form>
+                    <textarea name="message" id="message" cols="30" rows="10" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">Enter your message here</textarea>
                 </fieldset>
 
             </div>
@@ -191,7 +190,6 @@
     <script src="./js/homepageCSS.js"></script>
     <script src="./js/user.js"></script>
     <script src="./js/mainimg.js"></script>
-
 </body>
 
 </html>

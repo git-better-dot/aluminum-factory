@@ -105,15 +105,17 @@ h1 {
     margin: 10px 0px 20px 0px;
 }
 
-b, p {
+b,
+p {
     margin-right: 2px;
     font-size: 15px;
 }
 
-#Male, #Female {
+#Male,
+#Female {
     font-size: 15px;
-} 
+}
 
 .blur {
-    filter: blur(5px); 
+    filter: blur(5px);
 }
