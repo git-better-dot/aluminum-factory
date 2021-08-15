@@ -4,7 +4,8 @@ function newimg(id,src){
 function oldimg(id,src){
     document.getElementById(id).src = src;
 }
-let save = []
+let numquantity;
+let arrquantity = [0,0,0,0]
 let form ;
 let num = 0
 let count =0
@@ -13,6 +14,7 @@ let count =0
 let img1 = document.getElementById('firstimg')
 img1.addEventListener('click',addquentity)
 function addquentity(event) {
+    numquantity = 0
     if (count > 0){
         form.remove()
     }
@@ -28,7 +30,7 @@ function addquentity(event) {
     let input = document.createElement('input')
     input.type = 'text'
     input.id = 'imag1'
-    input.placeholder=num
+    input.placeholder=arrquantity[0]
     form.appendChild(input)
     let submit = document.createElement('input')
     submit.type="submit"
@@ -48,6 +50,8 @@ form.addEventListener('submit',quentity)
 let img2 = document.getElementById('secondimg')
 img2.addEventListener('click', addquentity2 )
 function addquentity2(event) {
+    numquantity = 1;
+
     if (count > 0){
         form.remove()
     }
@@ -63,7 +67,7 @@ function addquentity2(event) {
     let input = document.createElement('input')
     input.type = 'text'
     input.id = 'imag1'
-    input.placeholder=num
+    input.placeholder=arrquantity[1]
     form.appendChild(input)
     let submit = document.createElement('input')
     submit.type="submit"
@@ -83,6 +87,8 @@ form.addEventListener('submit',quentity)
 let img3 = document.getElementById('thirdimg')
 img3.addEventListener('click', addquentity3 )
 function addquentity3(event) {
+    numquantity = 2
+
     if (count > 0){
         form.remove()
     }
@@ -98,7 +104,7 @@ function addquentity3(event) {
     let input = document.createElement('input')
     input.type = 'text'
     input.id = 'imag1'
-    input.placeholder=num
+    input.placeholder=arrquantity[2]
     form.appendChild(input)
     let submit = document.createElement('input')
     submit.type="submit"
@@ -116,6 +122,8 @@ function addquentity3(event) {
 let img4 = document.getElementById('fourthimg')
 img4.addEventListener('click', addquentity4 )
 function addquentity4(event) {
+    numquantity = 3
+
     if (count > 0){
         form.remove()
     }
@@ -131,7 +139,7 @@ function addquentity4(event) {
     let input = document.createElement('input')
     input.type = 'text'
     input.id = 'imag1'
-    input.placeholder=num
+    input.placeholder=arrquantity[3]
     form.appendChild(input)
     let submit = document.createElement('input')
     submit.type="submit"
@@ -146,9 +154,10 @@ form.addEventListener('submit',quentity)
 
 function quentity(event){
     event.preventDefault()
-    num = event.target.imag1.value
-    save.push(num)
-    localStorage.cart = JSON.stringify(save)
+    num = parseInt(event.target.imag1.value)
+    arrquantity[numquantity]+= num
+console.log(arrquantity)
+    localStorage.cart = JSON.stringify(arrquantity)
     console.log(num)
     form.reset();
     img4.addEventListener('click', addquentity4 )
