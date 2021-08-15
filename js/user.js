@@ -80,7 +80,6 @@ function submitHandler(event) {
   document.getElementById('SignUpBtn').style.display = 'none';
   //here we stoped the page from reloading
 
-
 }
 SingUpForm.addEventListener('submit', submitHandler1);
 
@@ -122,9 +121,7 @@ function savedUsers() {
     for (let i = 0; i < lastUser.length; i++) {
       new UsersData(lastUser[i].username, lastUser[i].password, lastUser[i].email, lastUser[i].gender, lastUser[i].question, lastUser[i].answer);
     }
-
-  } 
-
+  }
 }
 
 
