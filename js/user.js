@@ -54,7 +54,7 @@ function submitHandler(event) {
   getValuesLogin();
   console.log(userName);
   console.log(passWord);
-  userLogChecked();
+  //userLogChecked();
   //now you have to put a if statment to compare the saved username and password from the sign up
   //to the ones entered in the log in from
 
@@ -87,11 +87,29 @@ function submitHandler1(event) {
   event.preventDefault();
   getValuesSignUp();
 
-  let sendtoStorage = JSON.stringify(UsersData.allUsers);
-  localStorage.usersInfo = sendtoStorage;
 
   savedUsers();
+  //here we hide the log in form after submiting
+  document.getElementById('LoginForm').style.display = 'none';
+  //here we showed the buttonsSection div and added a p tag with the username in it to the buttonsSection div
+  buttonsSection.style.display = 'inline';
+  let userNameInbuttonsSections = document.createElement('p');
+  userNameInbuttonsSections.textContent = userNameS;
+  userNameInbuttonsSections.setAttribute('id', 'LoginName');
+  let profilepic = './img/' + 'profile 50px.png';
+  let profilepicElement = document.createElement('img');
+  profilepicElement.setAttribute('src', profilepic);
+  profilepicElement.setAttribute('alt', 'na');
+  profilepicElement.setAttribute('height', '35px');
+  profilepicElement.setAttribute('id', 'LoginPic');
+  buttonsSection.appendChild(profilepicElement);
+  buttonsSection.appendChild(userNameInbuttonsSections);
 
+
+  document.getElementById('logInBtn').style.display = 'none';
+  document.getElementById('SignUpBtn').style.display = 'none';
+
+  document.getElementById('SingUpForm').style.display='none';
   //   console.log(userNameS);
   //   console.log(passWordS);
   //   console.log(email);
@@ -113,20 +131,26 @@ function UsersData(username, password, email, gender, question, answer) {
 
 UsersData.allUsers = [];
 
-let usersArry=[];
+
+
+let usersArry = [];
+
+
+
 function savedUsers() {
-  if (localStorage.usersInfo) {
 
-    let lastUser = JSON.parse(localStorage.usersInfo);
-    for (let i = 0; i < lastUser.length; i++) {
-      new UsersData(lastUser[i].username, lastUser[i].password, lastUser[i].email, lastUser[i].gender, lastUser[i].question, lastUser[i].answer);
-    }
+
+  let userData = new UsersData(userNameS, passWordS, email, gender, question, anwser);
+
+  if (localStorage.users) {
+    usersArry.push(JSON.parse(localStorage.getItem('users')));
+    usersArry.push(userData = new UsersData(userNameS, passWordS, email, gender, question, anwser));
+    localStorage.users = JSON.stringify(usersArry);
+  } else {
+    localStorage.setItem('users', JSON.stringify(userData));
   }
+
 }
-
-
-
-
 
 
 // function userLogChecked() {
