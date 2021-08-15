@@ -19,7 +19,7 @@ function submitHandler(event) {
     console.log(country);
 
     savedUserMsg();
-
+    alert('Thanks For Contacting Us \nWe Will Get In Contact With You Very Soon');
 }
 
 function UsersMsg(country, Enquiry, fName, lName, Phone, Email, message) {
