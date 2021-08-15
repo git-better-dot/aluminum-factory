@@ -209,3 +209,12 @@ footer {
 #mainheader{
     background-color: #222831;
 }
+
+#myDIV {
+    width: 35%;
+    height: auto;
+    padding: 25px 0;
+    text-align: center;
+    background-color: #222831;
+    margin-top: 20px;
+}
