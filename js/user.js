@@ -114,7 +114,7 @@ function UsersData(username, password, email, gender, question, answer) {
 
 UsersData.allUsers = [];
 
-
+let usersArry=[];
 function savedUsers() {
   if (localStorage.usersInfo) {
 
