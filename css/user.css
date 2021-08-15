@@ -113,3 +113,7 @@ b, p {
 #Male, #Female {
     font-size: 15px;
 } 
+
+.blur {
+    filter: blur(5px); 
+}
