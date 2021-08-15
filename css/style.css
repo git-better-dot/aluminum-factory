@@ -1,124 +1,192 @@
-body {
-    width: 1280px;
-    margin: auto;
-    position: relative;
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    background-color: #EFEFEF;
+    overflow-x: hidden;
+
 }
+
+section {
+    height: 90hv;
+    width: 100%;
+}
+
+
+/* header styling */
 
 header {
-    height: 90px;
-    background-color: gray;
-    display: grid;
-    grid-template-columns: 80px 700px 200px auto;
-    align-items: center;
+    background-color: hsla(217, 10%, 25%, 0%);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 20;
+    transition: all ease-in-out 600ms;
 }
 
-header img {
-    padding-left: 70px;
-}
-
-#middle-nav {
-    display: grid;
-    grid-template-columns: 300px 80px 80px 80px;
-    text-align: right;
-}
-
-header nav a {
+header nav {
+    position: relative;
+    display: flex;
     padding: 20px;
-    display: inline;
-    margin: 20px;
-    padding: 0px;
+    gap: 30px;
+}
+
+#navMenu {
+    margin-top: -5px;
+}
+
+header nav div a {
+    position: relative;
     text-decoration: none;
-    color: rgb(10, 10, 10);
+    color: black;
+    padding: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
 }
 
-button {
-    width: 90px;
-    border-radius: 10px;
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 550ms;
+    background-color: hsla(217, 10%, 25%, 85%);;
+    height: 50px;
+    width: 100%;
+    padding-bottom: 10px;
 }
 
-#side-nav {
-    display: grid;
-    grid-template-columns: 100px 80px;
+.sticky a {
+    color: white;
+}
+  
+.sticky nav a:hover {
+    background: hsla(0, 0%, 100%, 50%);
+    position: relative;
+    border: hsla(0, 0%, 100%, 70%);
+    border-radius: 5%;
 }
 
-#main-img {
-    padding-left: 20px;
-    padding-top: 20px;
+#usersBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 30px;
 }
 
-.w3-display-left {
-    position: absolute;
-    top: 60%;
-    left: 60px;
-    transform: translate(0%, -50%);
-    -ms-transform: translate(-0%, -50%)
+#usersBar span {
+    display: flex;
 }
 
-.w3-display-right {
-    position: absolute;
-    top: 60%;
-    right: 60px;
-    transform: translate(0%, -50%);
-    -ms-transform: translate(0%, -50%)
+.flexElement small {
+    position: relative;
+    right: 130px;
+    top: 27px;
+    font-size: 12px;
 }
 
-.w3-black,
-.w3-hover-black:hover {
-    color: #fff!important;
-    background-color: #000!important
+#fbSmall {
+    right: 160px;
 }
 
-.w3-button {
-    border: none;
-    display: inline-block;
-    padding: 8px 16px;
-    vertical-align: middle;
-    overflow: hidden;
-    text-decoration: none;
-    color: inherit;
-    background-color: inherit;
-    text-align: center;
-    cursor: pointer;
-    white-space: nowrap
+.flexElement h2 {
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* For the slider  */
+
+#mainSlider {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 40%; 
 }
 
-#products {
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 40px;
-    display: grid;
-    grid-template-columns: auto auto;
+/* services section */
+
+
+#Services h2, .accessories h2, #brief h2 {
+    color: #222831;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 170px 20px 0px 20px;
+    text-transform: uppercase;
+}
+
+#servicesContent, #breifContent {
+    display: flex;
+    margin: 40px 50px 0px 40px;
+    gap: 50px;
+    padding: 25px;
+    border: 1px solid black;
+}
+
+#Servicesinfo {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
-    height: 720px;
 }
 
-#best-seller {
-    height: 500px;
-    overflow: scroll;
+#Servicesinfo h3 {
+    color: #222831;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-#main {
-    height: 630px;
+#Servicesinfo p, #breifContent p {
+    color: #393E46;
+    line-height: 20px;
 }
 
-#fourImg {
+#Servicesinfo button {
+    height: 50px;
+    width: 130px;
+    border: 1px solid #222831;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    color:#222831;
+    text-align:center;
+}
+
+/* accessories section  */
+
+.accessories {
+    position: relative;
+    top: -150px;
+}
+
+.accessories h3 {
+    margin: 30px 0px 20px 20px;
+    color: #222831;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#bestSeller, #allProducts {
+    margin: 30px 0px 0px 50px;
     display: grid;
-    grid-template-columns: 305px 305px 305px 305px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#scrollimg {
-    height: 720px;
+/* brief content */
+
+#brief {
+    background-image: url('../img/companyBackground.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px;
+    /* filter: blur(8px); */
+
 }
 
-#contactParagh {
-    width: 1280px;
-    height: 720px;
+footer {
+    height: 120px;
 }
-
-
-/* footer{
-    width: 1280px;
-    height: 720px;
-  position:absolute;
-  bottom:0;
-  } */

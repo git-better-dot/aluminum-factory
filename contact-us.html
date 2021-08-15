@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header id="mainHeader">
+    
+        <img src=" https://via.placeholder.com/200x70/000000">
+        <nav id="navBar">
+            <div>
+                <a href="index.html">Home</a>
+                <a href=""> Products & Services</a>
+                <a href="">Accessories</a>
+                <a href="">About Us</a>
+            </div>
+
+            <div id="buttonsSection">
+                <button id="logInBtn" onclick="myLogInFunction()">log in</button>
+                <button id="SignUpBtn" onclick="mySignUpFunction()">sign up</button>
+            </div>
+
+            <div id="navMenu">
+                <img src="https://via.placeholder.com/50x50" alt="">
+            </div>
+        </nav>
+
+    </header>
+    <main>
+     <section>
+     <div>
+
+        <br/>
+        <h3>
+            Contact Us
+        </h3>
+    </div>
+
+
+     <div>
+        <fieldset>
+            <legend>Contact Us Form </legend>
+            <form id='contactusForm'>
+                <label for="country"> Store Location </label>
+
+                <select id="country" name="country">
+                    <option value="Algeria">Algeria</option>
+                    <option value="Bahrain">Bahrain</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="Iraq">Iraq</option>
+                    <option value="Jordan">Jordan</option>
+                    <option value="Kuwait">Kuwait</option>
+                    <option value="Lebanon">Lebanon</option>
+                    <option value="Morocco">Morocco</option>
+                    <option value="Oman">Oman</option>
+                    <option value="Palestine">Palestine</option>
+                    <option value="Qatar">Qatar</option>
+                    <option value="Saudi Arabia">Saudi Arabia</option>
+                    <option value="Somalia">Somalia</option>
+                    <option value="South Africa">South Africa</option>
+                    <option value="Sudan">Sudan</option>
+                    <option value="Syria">Syria</option>
+                    <option value="Tunisia">Tunisia</option>
+                    <option value="United Arab Erimates">United Arab Emirates</option>
+                    <option value="Yemen">Yemen</option>
+                 </select>
+              
+                <label class="ProductEnquiry">Product Enquiry</label>
+                <input type="text" name="" id="ProductEnquiry" required>
+                <label class="FirstName">First Name</label>
+                <input type="text" name="" id="FirstName" required>
+                <label class="LastName">Last Name</label>
+                <input type="text" name="" id="LastName" required>
+                <label class="Phone">Phone</label>
+                <input type="tel" name="" id="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="07x-xxx-xxx" required>
+                <label class="Email"> Email</label>
+                <input type="Email" name="" id="Email" required>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </form>
+            <textarea name="message" id="contactusForm" cols="30" rows="10">Enter your message here</textarea>
+        </fieldset>
+
+     </div>
+
+     </section>
+
+    </main>
+
+   <footer>
+    <p>All rights reserved &copy; 2021</p>
+
+
+   </footer>
+</body>
+</html>
