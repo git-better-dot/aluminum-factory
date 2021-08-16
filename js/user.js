@@ -141,17 +141,16 @@ function savedUsers() {
 
 
     let userData = new UsersData(userNameS, passWordS, email, gender, question, anwser);
-
-    if (localStorage.users) {
-        usersArry.push(JSON.parse(localStorage.getItem('users')));
-        usersArry.push(userData = new UsersData(userNameS, passWordS, email, gender, question, anwser));
-        localStorage.users = JSON.stringify(usersArry);
-    } else {
-        localStorage.setItem('users', JSON.stringify(userData));
+    let Arr = [];
+    if (localStorage.users == null) {
+        localStorage.setItem('users', '[]');
     }
+    usersArry = JSON.parse(localStorage.getItem('users'));
 
+    Arr.push(userData = new UsersData(userNameS, passWordS, email, gender, question, anwser));
+    usersArry.push(Arr);
+    localStorage.users = JSON.stringify(usersArry);
 }
-
 // function userLogChecked() {
 //   for (let i = 0; i < users.length; i++) {
 //     if (users[i].Username == userName && users[i].Password == passWord) {
