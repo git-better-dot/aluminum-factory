@@ -1,3 +1,5 @@
+
+
 let usersOfTheSite = JSON.parse(localStorage.users);
 console.log(usersOfTheSite)
 console.log(localStorage.cart2)
@@ -64,3 +66,75 @@ function render() {
     }
 
 }
+
+
+let namecahrt = ['product1', 'product2', 'product3', 'product4','product5','product6','product7','product8'];
+
+if(localStorage.cart3){
+    let productarr = JSON.parse(localStorage.getItem('cart3')) 
+  console.log(productarr)
+let ctx = document.getElementById('myChart').getContext('2d');
+
+  let myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: namecahrt,
+      datasets: [{
+        label: '# click',
+        data: productarr,
+        backgroundColor:
+          '#3C8DAD',
+        borderColor:
+          '#F5A962',
+        // backgroundColor:
+        //         '#125D98',
+
+        // borderColor: 
+        //   '#DDDDDD'
+
+        borderWidth: 2,
+        order: 2,
+        font: {
+          size: 30
+        }
+      },
+    //    {
+    //     label: '# shown',
+    //     data: shownArr,
+    //     hoverBackgroundColor: '#125D98',
+    //     hoverBorderColor: '#DDDDDD',
+
+    //     borderWidth: 2,
+    //     // type: 'line',
+    //     // this dataset is drawn on top
+    //     order: 1
+    //   }
+]
+    },
+    options: {
+      plugins: {
+        legend: {
+          labels: {
+            // This more specific font property overrides the global property
+            font: {
+              size: 20
+            }, color: 'black'
+            ,
+          }
+        }
+      },
+      scales: {
+        yAxes: [{
+          ticks: {
+            fontColor: "black",
+            stepSize: 1,
+            beginAtZero: true
+          }
+        }]
+      }
+    }
+  })};
+
+  function clearcart(){
+      localStorage.removeItem('cart3')
+  }
