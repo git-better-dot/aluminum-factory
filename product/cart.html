@@ -1,16 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <ul id = 'listcart'>
 
-    </ul>
-    <script src="../js/cart.js"></script>
+  
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>cart</title>
+  
+     <link rel="stylesheet" href="../css/cart.css">
+  
+</head>
+
+<body>
+
+  <header>
+    <h1>cart </h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">product</a><span id="itemCount"></span></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="deck col-1">
+      <div class="card">
+        <header>
+          <h1>Your Cart</h1>
+        </header>
+        <div class="copy">
+          <ol>
+            <li>Click the "X" next to any item to remove it from your cart</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="deck col-1">
+      <div id="cart-container" class="card">
+        <table id="cart">
+          <thead>
+            <tr>
+              <th>Remove</th>
+              <th>Quantity</th>
+              <th>Item</th>
+            </tr>
+          </thead>
+          <tbody>
+            <div></div>
+          </tbody>
+          <tfoot></tfoot>
+        </table>
+      </div>
+    </section>
+<div>
+    <a href="product.html"><button onclick="myclear()">clear the cart</button></a>
+</div>
+  </main>
+
+  <footer>
+    <p>&copy;2018 Code Fellows 201d33</p>
+  </footer>
+
+  <script src="../js/cart.js"></script>
 
 </body>
+
 </html>
+
+    
