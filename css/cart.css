@@ -218,7 +218,7 @@ label span {
 
 /* FOOTER STYLING */
 
-footer {
+/* footer {
   height: 120px;
   display: flex;
   flex-direction: column;
@@ -226,7 +226,7 @@ footer {
   align-items: center;
   background-color: #222831; 
   color: white;
-}
+} */
 
 footer ul {
   display: flex;

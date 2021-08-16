@@ -1,4 +1,3 @@
-
 let numquantity; // determine the image
 arrquantity = JSON.parse(localStorage.getItem('cart')) || [];
 let form; // create form
