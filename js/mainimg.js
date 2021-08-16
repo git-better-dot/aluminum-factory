@@ -2,11 +2,11 @@
 let reverse;
 let count = 0;
 let img = document.getElementById('main-img');
-let imag = ['../img/slide1.png', '../img/slide2.png', '../img/slide3.png', '../img/slide4.gif'];
+let imag = ['./img/slide1.png', './img/slide2.png', './img/slide3.png', './img/slide4.gif'];
 let count2 = imag.length-1;
 img.src = imag[count];
 
-let slide = setInterval(show, 3000);
+let slide = setInterval(show, 3800);
 console.log(imag.length);
 function show(){
 
@@ -17,7 +17,7 @@ function show(){
   if (count >= imag.length){
     count = 0;
     clearInterval(slide);
-    reverse= setInterval(show2, 3000);
+    reverse= setInterval(show2, 3800);
 
   }
 }
@@ -30,7 +30,7 @@ function show2(){
   if (count2 <=0 ){
     count2 = imag.length-1;
 
-    slide = setInterval(show, 3000);
+    slide = setInterval(show, 3800);
 
     clearInterval(reverse);
   }
@@ -48,7 +48,7 @@ radio1.addEventListener('click',function(){
 
   count = 0;
   img.src = imag[count];
-  slide = setInterval(show, 3000);
+  slide = setInterval(show, 3800);
 
 });
 radio2.addEventListener('click',function(){
@@ -56,7 +56,7 @@ radio2.addEventListener('click',function(){
   clearInterval(slide);
   clearInterval(reverse);
   img.src = imag[count];
-  slide = setInterval(show, 3000);
+  slide = setInterval(show, 3800);
   // radio1.removeEventListener()
 });
 radio3.addEventListener('click',function(){
@@ -64,7 +64,7 @@ radio3.addEventListener('click',function(){
   clearInterval(slide);
   clearInterval(reverse);
   img.src = imag[count];
-  slide = setInterval(show, 3000);
+  slide = setInterval(show, 3800);
 });
 radio4.addEventListener('click',function(){
   clearInterval(slide);
@@ -72,7 +72,7 @@ radio4.addEventListener('click',function(){
 
   count = 3;
   img.src = imag[count];
-  slide = setInterval(show, 3000);
+  slide = setInterval(show, 3800);
 
 });
 let click ;
@@ -91,7 +91,7 @@ function plusDivs(){
   clearInterval(reverse);
   count2 = imag.length-1;
 
-  slide = setInterval(show, 3000);
+  slide = setInterval(show, 3800);
 
 }
 
@@ -111,7 +111,7 @@ function subDivs(){
   clearInterval(reverse);
   count2 = imag.length-1;
 
-  slide = setInterval(show, 3000);
+  slide = setInterval(show, 3800);
 
 }
 

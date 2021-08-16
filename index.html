@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/user.css">
     <link rel="stylesheet" href="./css/mainimg.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Aluminum Souq</title>
 </head>
 
@@ -16,7 +18,7 @@
 
     <header id="mainHeader">
 
-        <img src=" https://via.placeholder.com/200x70/000000">
+        <img src="./img/logo.png" style="padding: 7px;">
         <nav id="navBar">
             <div>
                 <a href="#mainSlider">Home</a>
@@ -26,39 +28,63 @@
             </div>
 
             <div id="buttonsSection">
-                <button id="logInBtn" onclick="myLogInFunction()">log in</button>
-                <button id="SignUpBtn" onclick="mySignUpFunction()">sign up</button>
+                <button id="logInBtn" onclick="myLogInFunction(); myBlurFunction(1)">log in</button>
+                <button style="margin-right: 30px;" id="SignUpBtn" onclick="mySignUpFunction()">sign up</button>
+            </div>
+            <div id="navMenu">
+                <button style="background-color: hsla(217, 10%, 25%, 0%);padding-top: 4px;position: absolute;right: 16px;z-index: 5;" onclick="myFunction()"><img src="./img/muneSide.png" alt="menu" height="30" width="30"></button>
+                <div id="myDIV" style="position: absolute;top: -5px;right: 16px;display: block;z-index: 2;">
+
+                    <a style="display: block;" href="">Home</a>
+                    <a style="display: block;" href="">PRODUCTS LINE</a>
+                    <a style="display: block;" href="">SERVICES</a>
+                    <a style="display: block;" href="">STORE</a>
+                    <a style="display: block;" href="">ADRESSES</a>
+                    <a style="display: block;" href="./contact-us.html">CONTACT</a>
+
+                <a style="display: block;" href="">Home</a>
+                <a style="display: block;" href="./product/product.html">PRODUCTS LINE</a>
+                <a style="display: block;" href="">SERVICES</a>
+                <a style="display: block;" href="">STORE</a>
+                <a style="display: block;" href="./contact-us.html">ABOUT & CONTACT</a>
+
+                </div>
+
             </div>
 
-            <div id="navMenu">
-                <img src="./img/muneSide.png" alt="menu" height="30" width="30">
-            </div>
         </nav>
 
     </header>
 
     <main id="main">
+        </div>
         <div id="mainSlider">
             <div id="usersBar">
                 <span class="flexElement">
-                    <img src="./img/diamond.png" alt="who are we">
+                    <img style="margin-right: 5px;" src="./img/diamond.png" alt="who are we">
                     <h2>#1 Aluminum Store</h2>
                     <small>Best Aluminum Store in Jordan</small>
                 </span>
                 <span class="flexElement">
-                    <img src="./img/fb.png" alt="who are we">
-                    <h2>Follow Us On Facebook</h2>
-                    <small id="fbSmall">Participate in our public community</small>
+                    <img style="margin-right: 5px;" src="./img/fb.png" alt="who are we">
+                    <span id="facebookText">
+                        <h2>Follow Us On Facebook</h2>
+                        <small id="fbSmall">Participate in our public community</small>
+                    </span>
+
                 </span>
                 <span class="flexElement">
-                    <img src="./img/bag.png" alt="who are we">
-                    <h2>Industry Experience</h2>
-                    <small>Over 4 days on the field</small>
+                    <img style="margin-right: 5px;" src="./img/bag.png" alt="who are we">
+                    <span>
+                        <h2 style="position: relative;left: 19px;">Industry Experience</h2>
+                        <small>Over 35 Year on the Aluminium field</small>
+                    </span>
+
                 </span>
 
             </div>
 
-            <div class = 'slides'>
+            <div class='slides'>
                 <button class="buttonLeft" onclick="subDivs()">&#10094;</button>
 
                 <img id="main-img" src="https://via.placeholder.com/1240x570/222222" alt="" height="500">
@@ -72,9 +98,9 @@
                     <label for="radio3" class="manual-btn"></label>
                     <label for="radio4" class="manual-btn"></label>
                 </div>
-    
+
                 <button class="buttonRight" onclick="plusDivs()">&#10095;</button>
-                </div>
+            </div>
             <!-- this is the log in form -->
             <div class="form-popup" id="LoginForm">
                 <form class="form-container" id="LoginForm">
@@ -129,8 +155,42 @@
 
         </div>
 
+
+        <section id="Services">
+            <h2 data-aos="zoom-in-up" data-aos-duration="1500">
+                Products line & Services
+            </h2>
+            <div id="servicesContent">
+                <div id='Servicesinfo'>
+                    <h3 id="servicesHeader">Alucobond</h3>
+                    <p id="servicesPara">Alucobond is a composite panel consisting of two aluminum cover sheets and a fire-retardant or non-combustible mineral-filled core that stands for sustainable construction quality and the highest creative standards.</p>
+                    <button class="productsBtn">Products Line</button>
+                    <button class="servicesBtn">Services</button>
+                </div>
+
+                <div id="sideDiv">
+                    <img id="sideImage" src="https://via.placeholder.com/450x300" alt="">
+                    <button class="left slide" onclick="divSubDivs()">&#10094;</button>
+                    <button class="right slide" onclick="divPlusDivs()">&#10095;</button>
+
+                </div>
+            </div>
+
+        </section>
+        <section id="accessories" class="accessories">
+            <h2>Store</h2>
+            <h3>Best sellers</h3>
+            <div id="bestSeller">
+                <div>
+                    <figure>
+                        <img src="https://via.placeholder.com/150x200" alt="">
+
+                        <figcaption>Best seller 1</figcaption>
+                        <small>100 JD</small>
+                    </figure>
+
             <section id="Services">
-                <h2>
+                <h2 data-aos="zoom-in-up" data-aos-duration="1500">
                     Products line & Services
                 </h2>
                 <div id="servicesContent">
@@ -143,15 +203,15 @@
     
                     <div id="sideDiv">
                         <img id="sideImage" src="https://via.placeholder.com/450x300" alt="">
-                        <button class="left slide" onclick="divSubDivs()">&#10094;</button>
-                        <button class="right slide" onclick="divPlusDivs()">&#10095;</button>
+                        <button class="divButtonLeft" onclick="divSubDivs()">&#10094;</button>
+                        <button class="divButtonRight" onclick="divPlusDivs()">&#10095;</button>
     
                     </div>
                 </div>
     
             </section>
-            <section class="accessories">
-                <h2>Store</h2>
+            <section id="accessories" class="accessories">
+                <h2 data-aos="zoom-in-up" data-aos-duration="1500">Store</h2>
                 <h3>Best sellers</h3>
                 <div id="bestSeller">
                     <div>
@@ -187,71 +247,108 @@
                             <small>100 JD</small>
                         </figure>
                     </div>
+
                 </div>
-    
-                <h3>Other accessories</h3>
-    
-                <div id="allProducts">
-                    <div>
-                        <figure>
-                            <img src="https://via.placeholder.com/150x200" alt="">
-                            <figcaption>Product 1</figcaption>
-                            <small>100 JD</small>
-                    </div>
-    
-                    <div>
-    
-                        <figure>
-                            <img src="https://via.placeholder.com/150x200" alt="">
-                            <figcaption>Product 2</figcaption>
-                            <small>100 JD</small>
-                        </figure>
-                    </div>
-    
-                    <div>
-                        <figure>
-                            <img src="https://via.placeholder.com/150x200" alt="">
-                            <figcaption>Product 3</figcaption>
-                            <small>100 JD</small>
-                        </figure>
-                    </div>
-    
-                    <div>
-                        <figure>
-                            <img src="https://via.placeholder.com/150x200" alt="">
-                            <figcaption>Product 4</figcaption>
-                            <small>100 JD</small>
-                        </figure>
-                    </div>
+
+                <div>
+
+                    <figure>
+                        <img src="https://via.placeholder.com/150x200" alt="">
+                        <figcaption>Best seller 2</figcaption>
+                        <small>100 JD</small>
+                    </figure>
                 </div>
-    
-            </section>
-    
-            <section id="brief">
-                <h2>Who are we?</h2>
-                <div id="breifContent">
-                    <div>
-                        <p id="sideText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, commodi repellendus. Asperiores corrupti sed ex et dolores sit facere repellat, nam perspiciatis blanditiis laudantium at molestias placeat ea quidem itaque Lorem ipsum dolor
-                            sit amet consectetur adipisicing elit. Ratione unde, fugiat reprehenderit voluptatem magnam rem velit impedit sit totam incidunt culpa voluptas aspernatur quae voluptatum doloremque ipsa dolores dolor soluta! Lorem ipsum dolor sit
-                            amet, consectetur adipisicing elit. Nobis ratione, ea, dignissimos accusamus totam nemo nisi, exercitationem repellat laborum aspernatur nostrum. Fugit soluta quos consequatur quaerat, optio sequi minima dolores? Lorem ipsum dolor
-                            sit amet consectetur adipisicing elit. Eaque officia, veritatis aliquid, aperiam, molestias consequuntur repudiandae aliquam natus doloremque eveniet vero iste rerum architecto! Recusandae soluta numquam nobis libero velit.
-        
-                        </p>
-                        <button class="adresses">Adresses</button>
-                        <button class="contactUs">Contact Us</button>
-                    </div>
-        
-                    <div id="sideDiv">
-                        <img id="sideImage" src="https://via.placeholder.com/420x300" alt="">
-        
-                    </div>
+
+                <div>
+                    <figure>
+                        <img src="https://via.placeholder.com/150x180" alt="">
+                        <figcaption>Best seller 3</figcaption>
+                        <small>100 JD</small>
+                    </figure>
                 </div>
-            </section>
-        
+
+                <div>
+                    <figure>
+                        <img src="https://via.placeholder.com/150x200" alt="">
+                        <figcaption>Best seller 4</figcaption>
+                        <small>100 JD</small>
+                    </figure>
+                </div>
+            </div>
+            </div>
+
+            <h3>Other accessories</h3>
+
+            <div id="allProducts">
+                <div>
+                    <figure>
+                        <img src="https://via.placeholder.com/150x200" alt="">
+                        <figcaption>Product 1</figcaption>
+                        <small>100 JD</small>
+                </div>
+
+                <div>
+
+                    <figure>
+                        <img src="https://via.placeholder.com/150x200" alt="">
+                        <figcaption>Product 2</figcaption>
+                        <small>100 JD</small>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="https://via.placeholder.com/150x200" alt="">
+                        <figcaption>Product 3</figcaption>
+                        <small>100 JD</small>
+                    </figure>
+                </div>
+
+                <div>
+                    <figure>
+                        <img src="https://via.placeholder.com/150x200" alt="">
+                        <figcaption>Product 4</figcaption>
+                        <small>100 JD</small>
+                    </figure>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="brief">
+            <h2 data-aos="zoom-in-up" data-aos-duration="1500">Who are we?</h2>
+            <div id="breifContent">
+                <div>
+                    <p id="sideText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, commodi repellendus. Asperiores corrupti sed ex et dolores sit facere repellat, nam perspiciatis blanditiis laudantium at molestias placeat ea quidem itaque Lorem ipsum
+                        dolor sit amet consectetur adipisicing elit. Ratione unde, fugiat reprehenderit voluptatem magnam rem velit impedit sit totam incidunt culpa voluptas aspernatur quae voluptatum doloremque ipsa dolores dolor soluta! Lorem ipsum
+                        dolor sit amet, consectetur adipisicing elit. Nobis ratione, ea, dignissimos accusamus totam nemo nisi, exercitationem repellat laborum aspernatur nostrum. Fugit soluta quos consequatur quaerat, optio sequi minima dolores? Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Eaque officia, veritatis aliquid, aperiam, molestias consequuntur repudiandae aliquam natus doloremque eveniet vero iste rerum architecto! Recusandae soluta numquam nobis libero
+                        velit.
+
+                    </p>
+                    <button class="adresses">About Us</button>
+                    <button class="contactUs">Contact Us</button>
+                </div>
+
+                <div id="sideDiv">
+                    <img id="sideImage" src="https://via.placeholder.com/420x300" alt="">
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
 
     <footer id="footer">
+        <ul>
+            <li><a shref="">Home</a></li>
+            <li><a href="./product/product.html">PRODUCTS LINE</a></li>
+            <li><a href="">SERVICES</a></li>
+            <li><a href="">STORE</a></li>
+            <li><a href="./contact-us.html">ABOUT US</a></li>
+            <li><a href="./contact-us.html">CONTACT US</a></li>
+        </ul>
         <p>All rights reserved &copy; 2021</p>
     </footer>
 
@@ -259,6 +356,11 @@
     <script src="./js/homepageCSS.js"></script>
     <script src="./js/user.js"></script>
     <script src="./js/mainimg.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 
 </body>
 

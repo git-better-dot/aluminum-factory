@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif; */
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
 html {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
     position: absolute;
     background-color: #EFEFEF;
     overflow-x: hidden;
-
 }
 
 section {
@@ -17,13 +27,13 @@ section {
 /* header styling */
 
 header {
-    background-color: hsla(217, 10%, 25%, 0%);
+    background-color: hsla(217, 10%, 25%, 100%);
     height: 70px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     z-index: 20;
-    transition: all ease-in-out 600ms;
+    transition: all ease-in-out 600ms
 }
 
 header nav {
@@ -40,7 +50,7 @@ header nav {
 header nav div a {
     position: relative;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     padding: 10px;
     font-size: 13px;
     text-transform: uppercase;
@@ -52,7 +62,8 @@ header nav div a {
     left: 0;
     width: 100%;
     transition: all 550ms;
-    background-color: hsla(217, 10%, 25%, 85%);;
+    background-color: hsla(217, 10%, 25%, 85%);
+    ;
     height: 50px;
     width: 100%;
     padding-bottom: 10px;
@@ -61,7 +72,7 @@ header nav div a {
 .sticky a {
     color: white;
 }
-  
+
 .sticky nav a:hover {
     background: hsla(0, 0%, 100%, 50%);
     position: relative;
@@ -72,7 +83,8 @@ header nav div a {
 #usersBar {
     display: flex;
     justify-content: space-between;
-    margin: 15px 30px;
+    padding: 0px 30px;
+    background-color: #b9b9b9;
 }
 
 #usersBar span {
@@ -96,19 +108,23 @@ header nav div a {
     font-size: 14px;
     font-weight: bold;
 }
+
+
 /* For the slider  */
 
 #mainSlider {
     position: relative;
     top: 0;
     left: 0;
-    height: 40%; 
+    height: 40%;
 }
+
 
 /* services section */
 
-
-#Services h2, .accessories h2, #brief h2 {
+#Services h2,
+.accessories h2,
+#brief h2 {
     color: #222831;
     font-size: 28px;
     font-weight: bold;
@@ -116,7 +132,8 @@ header nav div a {
     text-transform: uppercase;
 }
 
-#servicesContent, #breifContent {
+#servicesContent,
+#breifContent {
     display: flex;
     margin: 40px 50px 0px 40px;
     gap: 50px;
@@ -137,7 +154,8 @@ header nav div a {
     text-transform: uppercase;
 }
 
-#Servicesinfo p, #breifContent p {
+#Servicesinfo p,
+#breifContent p {
     color: #393E46;
     line-height: 20px;
 }
@@ -148,10 +166,11 @@ header nav div a {
     border: 1px solid #222831;
     border-radius: 0.12em;
     box-sizing: border-box;
-    text-decoration:none;
-    color:#222831;
-    text-align:center;
+    text-decoration: none;
+    color: #222831;
+    text-align: center;
 }
+
 
 /* accessories section  */
 
@@ -168,11 +187,13 @@ header nav div a {
     text-transform: uppercase;
 }
 
-#bestSeller, #allProducts {
+#bestSeller,
+#allProducts {
     margin: 30px 0px 0px 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
 
 /* brief content */
 
@@ -184,9 +205,16 @@ header nav div a {
     background-size: cover;
     padding: 30px;
     /* filter: blur(8px); */
-
 }
 
 footer {
     height: 120px;
+}
+
+#facebookText {
+    margin-left: 10px;
+}
+
+#mainheader {
+    background-color: #222831;
 }
