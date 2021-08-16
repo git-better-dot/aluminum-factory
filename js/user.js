@@ -30,7 +30,7 @@ function getValuesLogin() {
 }
 
 function displayRadioValue() {
-    if (document.getElementById('Gender').checked === 'Male') {
+    if (document.getElementById('male').checked === true) {
         gender = 'Male';
     } else
         gender = 'Female';
