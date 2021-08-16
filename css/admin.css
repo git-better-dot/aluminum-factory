@@ -1,0 +1,47 @@
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: 'Permanent Marker', cursive;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  th {
+    background-color: #ff620a;
+    color: #e4dcdc;
+    text-align: left;
+    padding: 12px 15px;
+  }
+  
+  tr {
+    background-color: #ebeaf7;
+    color: #111010;
+    text-align: left;
+  }
+  
+  td {
+    padding: 12px 15px;
+  }
+  
+  tr:nth-of-type(even) {
+    background-color: #d1cece;
+  }
+  
+  tr:last-of-type {
+    border-bottom: 2px solid #ff620a;
+  }
+  
+  tr.active-row {
+    font-weight: bold;
+    color: #ff620a;
+  }
+
+main{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}

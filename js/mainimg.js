@@ -12,7 +12,6 @@ function show(){
 
 
   img.src = imag[count];
-  console.log( 'count ' + count);
   count++;
   if (count >= imag.length){
     count = 0;
@@ -25,7 +24,6 @@ function show2(){
 
 
   img.src = imag[count2-1];
-  console.log( 'count2 ' + count2);
   count2--;
   if (count2 <=0 ){
     count2 = imag.length-1;
