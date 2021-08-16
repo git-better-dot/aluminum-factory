@@ -9,7 +9,7 @@ html {
 
     margin: 0;
     padding: 0;
-    
+    width: 100%;
     position: absolute;
     background-color: #EFEFEF;
     overflow-x: hidden;
@@ -308,4 +308,7 @@ footer ul {
     flex-direction: row;
     padding-bottom: 30px;
     gap: 30px;
+}
+body{
+    width: 100%;
 }
