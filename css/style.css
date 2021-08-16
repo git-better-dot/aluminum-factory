@@ -6,15 +6,12 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif; */
 
 html {
-
     margin: 0;
-    padding: 0;
-    
+    padding: 0; 
     position: absolute;
     background-color: #EFEFEF;
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
-
 }
 
 section {
