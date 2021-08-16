@@ -10,7 +10,7 @@ if (localStorage.getItem('usermsg') == null) {
 let questionsMsgs = JSON.parse(localStorage.usermsg); //this will make problem if u let it without use
 console.log(localStorage.usermsg)
 
-let cartsForUser = JSON.parse(localStorage.cart2); //this will make problem if u let it without use
+// let cartsForUser = JSON.parse(localStorage.cart2); //this will make problem if u let it without use
 
 const usersAccount = document.getElementById('usersAccount');
 let userTable = document.createElement('table');
@@ -53,7 +53,7 @@ function render() {
     for (let i = 0; i < usersOfTheSite.length; i++) {
         arryofawsners[i] = usersOfTheSite[i][0].answer;
     }
-    let arrayheader = ['UserName', 'e-Mail', 'Gender', 'Question', 'Answer'];
+    let arrayheader = ['UserName', 'E-Mail', 'Gender', 'Question', 'Answer'];
     let tr1 = document.createElement('tr');
     userTable.appendChild(tr1)
     for (let i = 0; i < arrayheader.length; i++) {
@@ -111,16 +111,19 @@ function render1() {
     for (let i = 0; i < questionsMsgs.length; i++) {
         arryofMesseges[i] = questionsMsgs[i][0].message;
     }
-
-
-    let th = document.createElement('thead');
-    th.textContent = 'hi';
-    msgTable.appendChild(th);
+    let arrayheader1 = ['Country', 'Enquiry', 'First name', 'Last name', 'Phone number', 'E-Mail', 'Message'];
+    let tr0 = document.createElement('tr');
+    msgTable.appendChild(tr0)
+    for (let i = 0; i < arrayheader1.length; i++) {
+        let th1 = document.createElement('th');
+        th1.textContent = arrayheader1[i];
+        tr0.appendChild(th1);
+    }
     for (let i = 0; i < questionsMsgs.length; i++) {
 
 
         let tr = document.createElement('tr');
-        th.appendChild(tr);
+        msgTable.appendChild(tr);
         let td1 = document.createElement('td');
         td1.textContent = arryOfCtys[i]
         tr.appendChild(td1);
