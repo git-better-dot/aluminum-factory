@@ -30,11 +30,16 @@ function getValuesLogin() {
 }
 
 function displayRadioValue() {
-    if (document.getElementById('Gender').checked === 'Male') {
+    if (document.getElementById('malexx').checked === true) {
         gender = 'Male';
-    } else
+        alert("male");
+        return gender;
+
+    } else if (document.getElementById('femalexx').checked === true){
         gender = 'Female';
-    return gender;
+        alert("female");
+        return gender;
+    }
 }
 
 function getValuesSignUp() {
