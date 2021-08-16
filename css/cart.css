@@ -1,104 +1,116 @@
+/* HEADER STYLING */
 
-  
-body,
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap');
 html {
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #EFEFEF;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+}
+
+section {
+  height: 100vh;
   width: 100%;
-}
-
-body {
-  background-image: linear-gradient( to top right, #fff, #ccc);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-/* Specifically Targeting the Main Header (not to be confused with headers within cards) */
-
-body>header {
-  background: #062f4f;
-  border-bottom: 1px solid #ddd;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   overflow: hidden;
-  padding: .5em 5em;
+  align-items: center;
 }
 
-body>header:after {
-  content: "";
-  position: fixed;
-  top: -10px;
-  left: 0;
+header {
+  background-color: hsl(216, 18%, 16%);
+  height: 70px;
   width: 100%;
-  height: 10px;
-  z-index: 100;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+  transition: all ease-in-out 600ms
 }
 
-body>header nav {
-  float: right;
-  line-height: 2.5em;
+header nav {
+  position: relative;
+  display: flex;
+  padding: 20px;
+  gap: 30px;
 }
 
-body>header nav li {
-  display: inline-block;
+header nav div:nth-child(1) {
+  position: relative;
+  right: 18%;
 }
 
-body>header nav li a {
-  color: #eee;
-  padding: 0 .5em;
+header nav div a {
+  position: relative;
+  top: 20%;
   text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 550;
+  text-transform: uppercase;
+  transition: all 350ms;
 }
 
-#itemCount {
-  color: #ccc;
-  font-size: .75em;
-  line-height: 1em;
-  margin-left: -.5em;
-}
-
-body>header h1 {
-  float: left;
-  font-size: 2.5em;
-  color: #fff;
-  text-shadow: -1px -1px 1px #666, 1px 1px 1px #000;
-  opacity: 0.75;
+header nav div a:hover, header nav div a:active {
+  background: hsla(0, 0%, 100%, 20%);
 }
 
 
-/* Main Content */
-
-/* Note the height calculation -- that's to keep the footer at the bottom */
-
-main {
-  background: #fff;
-  border: 1px inset #ccc;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  line-height: 1.5em;
-  margin: 1.5em 1.5em 2.5em;
-  min-height: calc(100% - 9.5em);
-  height: auto !important;
-  text-shadow: white -1px 1px;
+#navMenu button {
+  background-color: hsla(217, 10%, 25%, 0%);
+  position: absolute;
+  right: 16px;
+  z-index: 5;
+  border: 1px solid hsla(0, 0%, 100%, 0%);
+  border-radius: 50%;
 }
 
-/* Footer Styling and sticking to the bottom */
 
-footer {
-  background: #eee;
-  border-top: 1px solid #ccc;
-  color: #666;
-  display: block;
-  height: 1.5em;
-  padding: .5em 5em;
+#buttonsSection button {
+  padding: 9px 17px;
+  color: #FFF;
+  background-color: hsl(14, 100%, 57%);
+  margin-left: 5px;
+  font-weight: 600;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  /* outline-color: rgba(255, 255, 255, 0.5); */
+  outline-color: hsla(14, 100%, 57%, 0.5);
+  outline-offset: 0px;
+}
+
+#mainHeader button:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.1);
+  outline-offset: 15px;
+  outline-color: rgba(255, 255, 255, 0);
+}
+
+
+#myDIV {
+  width: 35%;
+  height: auto;
+  padding: 25px 0;
   text-align: center;
+  background-color: #222831;
+  margin-top: 20px;
 }
 
+/* Main STYLING */
 
 /* Generic Deck and Card Styles */
-
-.deck {
-  overflow:hidden;
-}
 
 .card {
   box-sizing: border-box;
@@ -128,7 +140,6 @@ footer {
 .card .copy {
   padding: 1.5em;
 }
-
 
 /* Styles for the order form and summary on the main page */
 
@@ -171,8 +182,7 @@ label span {
   box-shadow: 0 3px 2px #777;
 }
 
-
-/* Styles for the table on the cart page */
+/* CART  */
 
 #cart {
   border-collapse: collapse;
@@ -186,7 +196,6 @@ label span {
   font-weight: bold;
   padding: .5em 1em;
 }
-
 
 #cart tr td {
   border-bottom: 1px solid #062f4f;
@@ -206,4 +215,35 @@ label span {
 #cart tr td:first-child {
   color: red;
   cursor: pointer;
+
+/* FOOTER STYLING */
+
+/* footer {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222831; 
+  color: white;
+} */
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+  gap: 30px;
+  list-style: none;
+}
+
+footer ul li a {
+  position: relative;
+  top: 20%;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 550;
+  text-transform: uppercase;
+  transition: all 350ms;
 }

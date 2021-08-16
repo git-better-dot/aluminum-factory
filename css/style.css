@@ -6,15 +6,17 @@ font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Slab', serif; */
 
 html {
-
     margin: 0;
+<<<<<<< HEAD
+    padding: 0; 
+=======
     padding: 0;
     width: 100%;
+>>>>>>> 3612f31a36dd8eccfd33d5806169a8b5275a5097
     position: absolute;
     background-color: #EFEFEF;
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
-
 }
 
 section {
