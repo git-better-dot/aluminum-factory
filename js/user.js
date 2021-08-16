@@ -30,7 +30,7 @@ function getValuesLogin() {
 }
 
 function displayRadioValue() {
-    if (document.getElementById('Gender').value === 'Male') {
+    if (document.getElementById('Gender').checked === 'Male') {
         gender = 'Male';
     } else
         gender = 'Female';
@@ -159,6 +159,8 @@ function savedUsers() {
     usersArry = JSON.parse(localStorage.getItem('users'));
 
     Arr.push(userData = new UsersData(userNameS, passWordS, email, gender, question, anwser));
+    console.log(Arr);
     usersArry.push(Arr);
+
     localStorage.users = JSON.stringify(usersArry);
 }
