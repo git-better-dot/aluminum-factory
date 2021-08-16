@@ -2,6 +2,8 @@ let userName, passWord, userNameS, passWordS, email, gender, question, anwser;
 let LoginForm = document.getElementById('LoginForm');
 let SingUpForm = document.getElementById('SingUpForm');
 const buttonsSection = document.getElementById('buttonsSection');
+let arryOfUsers = [];
+let arryOfPasswords = [];
 //this funtion is a on click funtion to log in button it will show the log in form and hide the buttonsSection div
 
 function myLogInFunction() {
@@ -45,41 +47,50 @@ function getValuesSignUp() {
 }
 
 LoginForm.addEventListener('submit', submitHandler);
-//this is a submit handler for the form
+
 function submitHandler(event) {
     event.preventDefault();
-
-
-    //here we called the getvaluse funtion and saved the username and password
+    let x = JSON.parse(localStorage.users);
+    console.log(x)
+    console.log(x[2][0].username);
     getValuesLogin();
-    console.log(userName);
-    console.log(passWord);
-    //userLogChecked();
-    //now you have to put a if statment to compare the saved username and password from the sign up
-    //to the ones entered in the log in from
+    for (let i = 0; i < x.length; i++) {
+        arryOfUsers[i] = x[i][0].username;
+        console.log(arryOfUsers);
+    }
+    for (let i = 0; i < x.length; i++) {
+        arryOfPasswords[i] = x[i][0].password;
+        console.log(arryOfPasswords);
+    }
+    for (let i = 0; i < x.length; i++) {
 
+        if (userName == arryOfUsers[i] && passWord == arryOfPasswords[i]) {
 
-    //here we hide the log in form after submiting
-    document.getElementById('LoginForm').style.display = 'none';
-    //here we showed the buttonsSection div and added a p tag with the username in it to the buttonsSection div
-    buttonsSection.style.display = 'inline';
-    let userNameInbuttonsSections = document.createElement('p');
-    userNameInbuttonsSections.textContent = userName;
-    userNameInbuttonsSections.setAttribute('id', 'LoginName');
-    let profilepic = './img/' + 'profile 50px.png';
-    let profilepicElement = document.createElement('img');
-    profilepicElement.setAttribute('src', profilepic);
-    profilepicElement.setAttribute('alt', 'na');
-    profilepicElement.setAttribute('height', '35px');
-    profilepicElement.setAttribute('id', 'LoginPic');
-    buttonsSection.appendChild(profilepicElement);
-    buttonsSection.appendChild(userNameInbuttonsSections);
+            document.getElementById('LoginForm').style.display = 'none';
+            //here we showed the buttonsSection div and added a p tag with the username in it to the buttonsSection div
+            buttonsSection.style.display = 'inline';
+            let userNameInbuttonsSections = document.createElement('p');
+            userNameInbuttonsSections.textContent = userName;
+            userNameInbuttonsSections.setAttribute('id', 'LoginName');
+            let profilepic = './img/' + 'profile 50px.png';
+            let profilepicElement = document.createElement('img');
+            profilepicElement.setAttribute('src', profilepic);
+            profilepicElement.setAttribute('alt', 'na');
+            profilepicElement.setAttribute('height', '35px');
+            profilepicElement.setAttribute('id', 'LoginPic');
+            buttonsSection.appendChild(profilepicElement);
+            buttonsSection.appendChild(userNameInbuttonsSections);
 
-    //here we hide the log in and sign up buttons
-    document.getElementById('logInBtn').style.display = 'none';
-    document.getElementById('SignUpBtn').style.display = 'none';
-    //here we stoped the page from reloading
+            //here we hide the log in and sign up buttons
+            document.getElementById('logInBtn').style.display = 'none';
+            document.getElementById('SignUpBtn').style.display = 'none';
+            //here we stoped the page from reloading
+            break;
+        }
+        alert('Wrong Username or password !!!')
+        break;
 
+    }
 }
 SingUpForm.addEventListener('submit', submitHandler1);
 
@@ -110,12 +121,7 @@ function submitHandler1(event) {
     document.getElementById('SignUpBtn').style.display = 'none';
 
     document.getElementById('SingUpForm').style.display = 'none';
-    //   console.log(userNameS);
-    //   console.log(passWordS);
-    //   console.log(email);
-    //   console.log(gender);
-    //   console.log(question);
-    //   console.log(anwser);
+
 }
 
 
@@ -135,7 +141,10 @@ UsersData.allUsers = [];
 
 let usersArry = [];
 
-
+function Userscart(x, y) {
+    x = username;
+    y = [];
+}
 
 function savedUsers() {
 
@@ -151,13 +160,3 @@ function savedUsers() {
     usersArry.push(Arr);
     localStorage.users = JSON.stringify(usersArry);
 }
-// function userLogChecked() {
-//   for (let i = 0; i < users.length; i++) {
-//     if (users[i].Username == userName && users[i].Password == passWord) {
-//       alert('You are loged in.');
-//     } else {
-//       alert('ERROR.');
-//     }
-
-//   }
-// }
