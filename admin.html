@@ -27,14 +27,9 @@
                 <a href="#brief">Brief</a>
             </div>
 
-            <div id="buttonsSection">
-                <button id="logInBtn" onclick="myLogInFunction(); myBlurFunction(1)">log in</button>
-                <button style="margin-right: 30px;" id="SignUpBtn" onclick="mySignUpFunction()">sign up</button>
-            </div>
+
             <div id="navMenu">
-                <button
-                    style="background-color: hsla(217, 10%, 25%, 0%);padding-top: 4px;position: absolute;right: 16px;z-index: 5;"
-                    onclick="myFunction()"><img src="./img/muneSide.png" alt="menu" height="30" width="30"></button>
+                <button style="background-color: hsla(217, 10%, 25%, 0%);padding-top: 4px;position: absolute;right: 16px;z-index: 5;" onclick="myFunction()"><img src="./img/muneSide.png" alt="menu" height="30" width="30"></button>
                 <div id="myDIV" style="position: absolute;top: -5px;right: 16px;display: block;z-index: 2;">
                     <a style="display: block;" href="">Home</a>
                     <a style="display: block;" href="./services.html">PRODUCTS LINE</a>
@@ -76,9 +71,10 @@
         </div>
 
         <section id="usersAccount"></section>
-        <section ></section>
+        <section></section>
         <section></section>
 
+        <button style="height: 500px;width: 500px;" onclick="render()">Click me</button>
 
     </main>
 
@@ -99,6 +95,7 @@
     <script src="./js/homepageCSS.js"></script>
     <script src="./js/user.js"></script>
     <script src="./js/mainimg.js"></script>
+    <script src="./js/admin.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

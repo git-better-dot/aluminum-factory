@@ -147,6 +147,7 @@ function Userscart(x, y) {
     x = username;
     y = [];
 }
+console.log('hi')
 
 function savedUsers() {
 
