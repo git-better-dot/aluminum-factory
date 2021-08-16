@@ -1,31 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="./css/reset.css"> -->
-    <link rel="stylesheet" href="../css/product.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/user.css">
+  <link rel="stylesheet" href="../css/mainimg.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/product.css">
+
+  <title>Aluminum Souq</title>
 </head>
+
 <body>
-    <header>
-        <h1>producte</h1>
-        <nav>
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="cart.html">Cart</a><span id="itemCount"></span></li>
-          </ul>
-        </nav>
-      </header>
-    <section>
-    <div class="container" id = 'firstimg'>
-        <div class="box" >
+
+  <header id="mainHeader">
+
+    <img src="../img/logo.png" style="padding: 7px;">
+    <nav id="navBar">
+      <div>
+        <a href="/index.html">Home</a>
+        <a href="cart.html">Cart</a><span id="itemCount"></span>
+        <a href="#accessories">Accessories</a>
+        <a href="#brief">Brief</a>
+      </div>
+   
+
+      <div id="buttonsSection">
+        <button id="logInBtn" onclick="myLogInFunction(); myBlurFunction(1)">log in</button>
+        <button style="margin-right: 30px;" id="SignUpBtn" onclick="mySignUpFunction()">sign up</button>
+      </div>
+      <div id="navMenu">
+        <button
+          style="background-color: hsla(217, 10%, 25%, 0%);padding-top: 4px;position: absolute;right: 16px;z-index: 5;"
+          onclick="myFunction()"><img src="../img/muneSide.png" alt="menu" height="30" width="30"></button>
+        <div id="myDIV" style="position: absolute;top: -5px;right: 16px;display: block;z-index: 2;">
+          <a style="display: block;" href="">Home</a>
+          <a style="display: block;" href="../product/product.html">PRODUCTS LINE</a>
+          <a style="display: block;" href="">SERVICES</a>
+          <a style="display: block;" href="">STORE</a>
+          <a style="display: block;" href="../contact-us.html">ABOUT & CONTACT</a>
+        </div>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+  <main id="main">
+    </div>
+    <div id="mainSlider">
+      <div id="usersBar">
+        <span class="flexElement">
+          <img style="margin-right: 5px;" src="../img/diamond.png" alt="who are we">
+          <h2>#1 Aluminum Store</h2>
+          <small>Best Aluminum Store in Jordan</small>
+        </span>
+        <span class="flexElement">
+          <img style="margin-right: 5px;" src="../img/fb.png" alt="who are we">
+          <span id="facebookText">
+            <h2>Follow Us On Facebook</h2>
+            <small id="fbSmall">Participate in our public community</small>
+          </span>
+
+        </span>
+        <span class="flexElement">
+          <img style="margin-right: 5px;" src="../img/bag.png" alt="who are we">
+          <span>
+            <h2 style="position: relative;left: 19px;">Industry Experience</h2>
+            <small>Over 35 Year on the Aluminium field</small>
+          </span>
+
+        </span>
+
+      </div>
+    </div>
+    <h1>Product</h1>
+    <section class="main-container">
+      
+      <div class="container" id='firstimg'>
+        <div class="box">
           <div class="imgBox">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREfZ3jb_SRN-vgVRmK0QTnvrCy1uR_OU-SmQ&usqp=CAU" onclick="function1()"  alt="" width="300" height="300">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREfZ3jb_SRN-vgVRmK0QTnvrCy1uR_OU-SmQ&usqp=CAU"
+              onclick="function1()" alt="" width="300" height="300">
           </div>
-          <div class="content" >
-            <div id ='img1'>
+          <div class="content">
+            <div id='img1'>
               <h2>Product #</h2>
               <p>Lorem ipsum dolor slit. natus cumque error doloremque reprehenderit ipsam modi vitae voluptatum.</p>
             </div>
@@ -33,10 +98,11 @@
         </div>
       </div>
 
-      <div class="container" id = 'secondimg'>
+      <div class="container" id='secondimg'>
         <div class="box">
           <div class="imgBox">
-            <img src="http://img.everychina.com/nimg/b6/36/364dbd7de7743d8fa0b6549a2670.jpg" alt="" width="300" height="300">
+            <img src="http://img.everychina.com/nimg/b6/36/364dbd7de7743d8fa0b6549a2670.jpg" alt="" width="300"
+              height="300">
           </div>
           <div class="content">
             <div>
@@ -47,10 +113,11 @@
         </div>
       </div>
 
-        <div class="container" id = 'thirdimg'>
+      <div class="container" id='thirdimg'>
         <div class="box">
           <div class="imgBox">
-            <img src="http://img.everychina.com/nimg/b6/36/364dbd7de7743d8fa0b6549a2670.jpg" alt="" width="300" height="300">
+            <img src="http://img.everychina.com/nimg/b6/36/364dbd7de7743d8fa0b6549a2670.jpg" alt="" width="300"
+              height="300">
           </div>
           <div class="content">
             <div>
@@ -61,10 +128,11 @@
         </div>
       </div>
 
-      <div class="container" id = 'fourthimg'>
+      <div class="container" id='fourthimg'>
         <div class="box">
           <div class="imgBox">
-            <img src="http://img.everychina.com/nimg/b6/36/364dbd7de7743d8fa0b6549a2670.jpg" alt="" width="300" height="300">
+            <img src="http://img.everychina.com/nimg/b6/36/364dbd7de7743d8fa0b6549a2670.jpg" alt="" width="300"
+              height="300">
           </div>
           <div class="content">
             <div>
@@ -75,7 +143,34 @@
         </div>
       </div>
     </section>
-      <script src="../js/product.js"></script>
+
+
+  </main>
+
+
+  <footer id="footer">
+    <ul>
+      <li><a shref="">Home</a></li>
+      <li><a href="./product/product.html">PRODUCTS LINE</a></li>
+      <li><a href="">SERVICES</a></li>
+      <li><a href="">STORE</a></li>
+      <li><a href="./contact-us.html">ABOUT US</a></li>
+      <li><a href="./contact-us.html">CONTACT US</a></li>
+    </ul>
+    <p>All rights reserved &copy; 2021</p>
+  </footer>
+
+  <script src="../js/app.js"></script>
+  <script src="../js/homepageCSS.js"></script>
+  <script src="../js/user.js"></script>
+  <script src="../js/mainimg.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/product.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 
 </body>
+
 </html>
