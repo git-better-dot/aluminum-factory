@@ -51,19 +51,19 @@ LoginForm.addEventListener('submit', submitHandler);
 function submitHandler(event) {
     event.preventDefault();
     let x = JSON.parse(localStorage.users);
-    console.log(x)
-    console.log(x[2][0].username);
     getValuesLogin();
     for (let i = 0; i < x.length; i++) {
         arryOfUsers[i] = x[i][0].username;
-        console.log(arryOfUsers);
     }
     for (let i = 0; i < x.length; i++) {
         arryOfPasswords[i] = x[i][0].password;
-        console.log(arryOfPasswords);
     }
-    for (let i = 0; i < x.length; i++) {
-
+    console.log(arryOfUsers);
+    console.log(arryOfPasswords);
+    console.log(userName);
+    console.log(passWord);
+    for (let i = 0; i < x.length + 1; i++) {
+        console.log(arryOfUsers[i])
         if (userName == arryOfUsers[i] && passWord == arryOfPasswords[i]) {
 
             document.getElementById('LoginForm').style.display = 'none';
@@ -86,9 +86,11 @@ function submitHandler(event) {
             document.getElementById('SignUpBtn').style.display = 'none';
             //here we stoped the page from reloading
             break;
+        } else if (i == x.length) {
+            alert('Wrong Username or password !!!')
+            break;
         }
-        alert('Wrong Username or password !!!')
-        break;
+
 
     }
 }
