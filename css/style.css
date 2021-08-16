@@ -309,6 +309,32 @@ footer ul {
     padding-bottom: 30px;
     gap: 30px;
 }
-body{
-    width: 100%;
-}
+
+
+.adminButton {
+    margin-left: 30px;
+    width: 60%;
+    outline: none;
+    border: none;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    background-color: hsl(14, 100%, 57%);
+    border-radius: 15px;
+    box-shadow: 0 6px rgb(80, 80, 80);
+  }
+  
+  .adminButton:hover {
+    background-color: #ff5101;
+    color: #222831;
+  }
+  
+  .adminButton:active {
+    background-color: #d8dbe7;
+    box-shadow: 0 3px rgb(92, 91, 91);
+    transform: translateY(4px);
+  }
