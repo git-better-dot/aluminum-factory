@@ -34,6 +34,11 @@ function addquentity(event) {
   img2.addEventListener('click', addquentity2);
   img3.addEventListener('click', addquentity3);
   img1.removeEventListener('click', addquentity);
+  img5.addEventListener('click', addquentity5);
+  img6.addEventListener('click', addquentity6);
+  img7.addEventListener('click', addquentity7);
+  img8.addEventListener('click', addquentity8);
+
   form.addEventListener('submit', quentity);
 
 
@@ -72,6 +77,11 @@ function addquentity2(event) {
   img1.addEventListener('click', addquentity);
   img3.addEventListener('click', addquentity3);
   img2.removeEventListener('click', addquentity2);
+  img5.addEventListener('click', addquentity5);
+  img6.addEventListener('click', addquentity6);
+  img7.addEventListener('click', addquentity7);
+  img8.addEventListener('click', addquentity8);
+
   form.addEventListener('submit', quentity);
 
 
@@ -109,6 +119,11 @@ function addquentity3(event) {
   img2.addEventListener('click', addquentity2);
   img1.addEventListener('click', addquentity);
   img3.removeEventListener('click', addquentity3);
+  img5.addEventListener('click', addquentity5);
+  img6.addEventListener('click', addquentity6);
+  img7.addEventListener('click', addquentity7);
+  img8.addEventListener('click', addquentity8);
+
   form.addEventListener('submit', quentity);
 }
 //#######################################################
@@ -143,8 +158,171 @@ function addquentity4(event) {
   img1.addEventListener('click', addquentity);
   img3.addEventListener('click', addquentity3);
   img4.removeEventListener('click', addquentity4);
+  img5.addEventListener('click', addquentity5);
+  img6.addEventListener('click', addquentity6);
+  img7.addEventListener('click', addquentity7);
+  img8.addEventListener('click', addquentity8);
+
   form.addEventListener('submit', quentity);
 }
+//#######################################################
+//#######################################################
+
+let img5 = document.getElementById('fifthimg');//*** */
+img5.addEventListener('click', addquentity5);//*** */
+function addquentity5(event) {//*** */
+  numquantity = 4;//*** */
+  if (count > 0) {
+    form.remove();
+  }
+  count++;
+  event.preventDefault();
+  form = document.createElement('form');
+  form.id = 'add';
+  img5.appendChild(form);//*** */
+  let label = document.createElement('label');
+  label.for = 'imag1';
+  label.textContent = 'add quantity';
+  form.appendChild(label);
+  let input = document.createElement('input');
+  input.type = 'text';
+  input.id = 'imag1';
+  input.placeholder = arrquantity[4] || 0;
+  form.appendChild(input);
+  let submit = document.createElement('input');
+  submit.type = 'submit';
+  submit.value = 'add cart';
+  form.appendChild(submit);
+  img2.addEventListener('click', addquentity2);
+  img1.addEventListener('click', addquentity);
+  img3.addEventListener('click', addquentity3);
+  img4.addEventListener('click', addquentity4);
+  img5.removeEventListener('click', addquentity5);
+  img6.addEventListener('click', addquentity6);
+  img7.addEventListener('click', addquentity7);
+  img8.addEventListener('click', addquentity8);
+
+  form.addEventListener('submit', quentity);
+}
+//#######################################################
+//#######################################################
+
+let img6 = document.getElementById('sixthimg');//*** */
+img6.addEventListener('click', addquentity6);//*** */
+function addquentity6(event) {//*** */
+  numquantity = 5;//*** */
+  if (count > 0) {
+    form.remove();
+  }
+  count++;
+  event.preventDefault();
+  form = document.createElement('form');
+  form.id = 'add';
+  img6.appendChild(form);//*** */
+  let label = document.createElement('label');
+  label.for = 'imag1';
+  label.textContent = 'add quantity';
+  form.appendChild(label);
+  let input = document.createElement('input');
+  input.type = 'text';
+  input.id = 'imag1';
+  input.placeholder = arrquantity[5] || 0;//*** */
+  form.appendChild(input);
+  let submit = document.createElement('input');
+  submit.type = 'submit';
+  submit.value = 'add cart';
+  form.appendChild(submit);
+  img2.addEventListener('click', addquentity2);
+  img1.addEventListener('click', addquentity);
+  img3.addEventListener('click', addquentity3);
+  img4.addEventListener('click', addquentity4);
+  img5.addEventListener('click', addquentity5);
+  img6.removeEventListener('click', addquentity6);
+  img7.addEventListener('click', addquentity7);
+  img8.addEventListener('click', addquentity8);
+
+  form.addEventListener('submit', quentity);
+}
+//#######################################################
+//#######################################################
+
+let img7 = document.getElementById('seventhimg');//*** */
+img7.addEventListener('click', addquentity7);//*** */
+function addquentity7(event) {//*** */
+  numquantity = 6;//*** */
+  if (count > 0) {
+    form.remove();
+  }
+  count++;
+  event.preventDefault();
+  form = document.createElement('form');
+  form.id = 'add';
+  img7.appendChild(form);//*** */
+  let label = document.createElement('label');
+  label.for = 'imag1';
+  label.textContent = 'add quantity';
+  form.appendChild(label);
+  let input = document.createElement('input');
+  input.type = 'text';
+  input.id = 'imag1';
+  input.placeholder = arrquantity[6] || 0;//*** */
+  form.appendChild(input);
+  let submit = document.createElement('input');
+  submit.type = 'submit';
+  submit.value = 'add cart';
+  form.appendChild(submit);
+  img2.addEventListener('click', addquentity2);
+  img1.addEventListener('click', addquentity);
+  img3.addEventListener('click', addquentity3);
+  img4.addEventListener('click', addquentity4);
+  img5.addEventListener('click', addquentity5);
+  img6.addEventListener('click', addquentity6);
+  img7.removeEventListener('click', addquentity7);
+  img8.addEventListener('click', addquentity8);
+
+  form.addEventListener('submit', quentity);
+}
+//#######################################################
+//#######################################################
+
+let img8 = document.getElementById('eighthimg');//*** */
+img8.addEventListener('click', addquentity8);//*** */
+function addquentity8(event) {//*** */
+  numquantity = 7;//*** */
+  if (count > 0) {
+    form.remove();
+  }
+  count++;
+  event.preventDefault();
+  form = document.createElement('form');
+  form.id = 'add';
+  img8.appendChild(form);//*** */
+  let label = document.createElement('label');
+  label.for = 'imag1';
+  label.textContent = 'add quantity';
+  form.appendChild(label);
+  let input = document.createElement('input');
+  input.type = 'text';
+  input.id = 'imag1';
+  input.placeholder = arrquantity[7] || 0;//*** */
+  form.appendChild(input);
+  let submit = document.createElement('input');
+  submit.type = 'submit';
+  submit.value = 'add cart';
+  form.appendChild(submit);
+  img2.addEventListener('click', addquentity2);
+  img1.addEventListener('click', addquentity);
+  img3.addEventListener('click', addquentity3);
+  img4.addEventListener('click', addquentity4);
+  img5.addEventListener('click', addquentity5);
+  img6.addEventListener('click', addquentity6);
+  img7.addEventListener('click', addquentity7);
+  img8.removeEventListener('click', addquentity8);
+
+  form.addEventListener('submit', quentity);
+}
+
+
 
 function quentity(event) {
 
@@ -157,5 +335,11 @@ function quentity(event) {
   img3.addEventListener('click', addquentity3);
   img1.addEventListener('click', addquentity);
   img2.addEventListener('click', addquentity2);
+  img5.addEventListener('click', addquentity5);
+  img6.addEventListener('click', addquentity6);
+  img7.addEventListener('click', addquentity7);
+  img8.addEventListener('click', addquentity8);
+
+
 }
 
