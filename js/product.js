@@ -1,13 +1,13 @@
-
 let numquantity; // determine the image
 arrquantity = JSON.parse(localStorage.getItem('cart')) || [];
 let form; // create form
-let num = 0 ;// 
-let count = 0;// remove the form when change picture
+let num = 0; // 
+let count = 0; // remove the form when change picture
 
 let img1 = document.getElementById('firstimg')
 
 img1.addEventListener('click', addquentity)
+
 function addquentity(event) {
     numquantity = 0
     if (count > 0) {
@@ -31,7 +31,7 @@ function addquentity(event) {
     submit.type = "submit"
     submit.value = "add cart"
     form.appendChild(submit)
-    img4.addEventListener('click', addquentity4) 
+    img4.addEventListener('click', addquentity4)
     img2.addEventListener('click', addquentity2)
     img3.addEventListener('click', addquentity3)
     img1.removeEventListener('click', addquentity)
@@ -44,6 +44,7 @@ function addquentity(event) {
 
 let img2 = document.getElementById('secondimg')
 img2.addEventListener('click', addquentity2)
+
 function addquentity2(event) {
 
     numquantity = 1;
@@ -82,6 +83,7 @@ function addquentity2(event) {
 
 let img3 = document.getElementById('thirdimg')
 img3.addEventListener('click', addquentity3)
+
 function addquentity3(event) {
     numquantity = 2
 
@@ -117,6 +119,7 @@ function addquentity3(event) {
 
 let img4 = document.getElementById('fourthimg')
 img4.addEventListener('click', addquentity4)
+
 function addquentity4(event) {
     numquantity = 3
     if (count > 0) {
