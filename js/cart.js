@@ -77,6 +77,7 @@ console.log(cartuser)
 const ta = document.getElementById('cart');
 ta.addEventListener('click', removeitem);
 function removeitem(event){
+  total = 0
     let target = event.target.innerText
 if(target == 'remove'){
     let child = parseInt(event.target.parentElement.childNodes[1].innerText)
@@ -84,6 +85,11 @@ if(target == 'remove'){
   let place =  cartItems.indexOf(child)
   let place2 = cartuser.indexOf(child)
     cartItems.splice(place,1,0)
+    cartItems.splice(place,1,0)
+    for( let i = 0;i<cartItems.length;i++){
+      total += cartItems[i]*price[i]
+    }
+    tdf.innerText = "total of price : " + total
     cartuser.splice(place2,1,0)
     localStorage.cart = JSON.stringify(cartItems)
 console.log(cartuser)
