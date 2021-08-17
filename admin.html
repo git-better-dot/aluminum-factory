@@ -19,7 +19,7 @@
 
     <header id="mainHeader">
 
-        <img src="./img/logo.png" style="padding: 7px;">
+        <img onclick="location.href='./index.html'" src="./img/logo.png" style="padding: 7px;cursor: pointer;">
         <nav id="navBar">
             <div>
                 <a href="./index.html">Home</a>
@@ -37,6 +37,8 @@
                     <a style="display: block;" href="./services.html">SERVICES</a>
                     <a style="display: block;" href="./product/product.html">STORE</a>
                     <a style="display: block;" href="./contact-us.html">ABOUT & CONTACT</a>
+                    <br>
+                    <a style="display: block;" href="./admin.html" class="adminButton">Admin Control</a>
                 </div>
 
             </div>
@@ -46,18 +48,21 @@
     </header>
 
     <main id="main">
+        <section>
+            <div id="usersAccount">
+                <button id="tableButton"  onclick="render()">Click To Show Users List </button>
+            </div>
+           <div id="userMsgs">
+               <button id="msgButton" onclick="render1()"> Show Contact Massages</button>
+            </div>
+          
+           <div>
+                  <button id="clearchart" onclick = 'clearcart()'> Claer Data of Chart </button>
+                 <canvas id="myChart" width="400" height="400"></canvas>
+          </div>
+        </section>
 
-        <section id="usersAccount">
-            <button id="tableButton" style="height: 100px;width: 200px;" onclick="render()">Click To Show Users List</button>
-        </section>
-       <section id="userMsgs">
-           <button onclick="render1()"> dont Click me</button>
-        </section>
-      
-       <section>
-              <button onclick = 'clearcart()'> claer data of chart </button>
-             <canvas id="myChart" width="400" height="400"></canvas>
-      </section>
+        
 
     </main>
  
@@ -78,8 +83,6 @@
 
     <script src="./js/app.js"></script>
     <script src="./js/homepageCSS.js"></script>
-    <script src="./js/user.js"></script>
-    <script src="./js/mainimg.js"></script>
     <script src="./js/admin.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
