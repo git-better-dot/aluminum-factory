@@ -40,30 +40,25 @@
                     <br>
                     <a style="display: block;" href="./admin.html" class="adminButton">Admin Control</a>
                 </div>
-
             </div>
-
         </nav>
-
     </header>
 
     <main id="main">
-        <center>
-            <section>
-                <div id="usersAccount">
+            <div >
+                <div id="mySidenav" class="sidenav">
+                    <h2>Aluminum Souq Admin</h2>
                     <button id="tableButton" onclick="render()">Click To Show Users List </button>
-                </div>
-                <div id="userMsgs">
                     <button id="msgButton" onclick="render1()"> Show Contact Massages</button>
-                </div>
-    
+                    <button style="margin-bottom: 5%;" id="clearchart" onclick='clearcart()'> Claer Product Of Chart </button>
+                  </div>
+                <div id="usersAccount"></div>
+                <div id="userMsgs"></div>
                 <div>
                     <canvas id="myChart" width="400" height="400"></canvas>
                 </div>
-            </section>
-            <button style="margin-bottom: 5%;" id="clearchart" onclick='clearcart()'> Claer Data of Chart </button>
-
-        </center>
+            </div>
+            
     </main>
 
 
