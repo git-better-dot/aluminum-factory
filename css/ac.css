@@ -67,7 +67,7 @@ header nav div a:hover, header nav div a:active {
 }
 
 
-#buttonsSection button {
+#buttonsSection button, #devButton {
     padding: 9px 17px;
     color: #FFF;
     background-color: hsl(14, 100%, 57%);
@@ -89,7 +89,7 @@ header nav div a:hover, header nav div a:active {
     outline-offset: 0px;
   }
   
-  #mainHeader button:hover {
+  #mainHeader button:hover, #devButton:hover {
     border: 1px solid;
     box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.1);
     outline-offset: 15px;
@@ -108,6 +108,11 @@ header nav div a:hover, header nav div a:active {
 
 /* About us */
 
+#about {
+    width: 90%;
+    margin: auto;
+}
+
 h3 {
     color: #222831;
     font-size: 22px;
@@ -121,43 +126,47 @@ h3 {
     text-align: justify;
     font-weight: bold;
     font-size: 16px;
-    line-height: 25px;
+    line-height: 30px;
     text-align: justify;
     margin: 0px 30px;
     color: hsl(217, 10%, 25%);
 }
 
 #about ol {
-    text-align: justify;
-    font-size: 16px;
     font-weight: bold;
     line-height: 30px;
     text-align: justify;
-    margin: 0px 90px;
+    margin: 0px 35px;
     padding: 10px;
     list-style-type: decimal;
     color: hsl(217, 10%, 25%);
+    line-height: 30px;
+}
+
+#devButton {
+    margin-top: 35px;
 }
 
 /* Tiny hero image */
 
 #tinyHero {
-    height: 400px;
+    height: 290px;
     position: relative;
-    filter: blur(2px);
+    filter: blur(1px);
 }
 
 /* Contact us form */
  
 #contact {
 	padding: 12px 24px 24px 24px;
-	background: hsl(217, 10%, 25%);
+	background: hsla(217, 10%, 25%, 65%);
 	border-radius: 4px;
     width: 70%;
     height: 50%;
     position: relative;
-    left: 10%;
     color: white; 
+    margin: auto;
+    z-index: 20;
     margin-bottom: 30px;
 }
 
