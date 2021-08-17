@@ -9,6 +9,7 @@ let arryOfPasswords = [];
 function myLogInFunction() {
     document.getElementById('LoginForm').style.display = 'block';
     buttonsSection.style.display = 'none';
+    
 }
 
 //this funtion saves the valuse in the username field and password filed in the form btw you have to call it later
@@ -94,11 +95,9 @@ function submitHandler(event) {
             //here we stoped the page from reloading
             break;
         } else if (i == x.length) {
-            alert('Wrong Username or password !!!')
+            alert('Wrong Username or password !!!');
             break;
         }
-
-
     }
 }
 SingUpForm.addEventListener('submit', submitHandler1);
