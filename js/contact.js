@@ -19,7 +19,11 @@ function submitHandler(event) {
     console.log(country);
 
     savedUserMsg();
-    alert('Thanks For Contacting Us \nWe Will Get In Contact With You Very Soon');
+    Swal.fire(
+        'Thanks For Contacting Us ',
+        'We Will Get In Contact With You Very Soon',
+        'success'
+    )
 }
 
 function UsersMsg(country, Enquiry, fName, lName, Phone, Email, message) {
