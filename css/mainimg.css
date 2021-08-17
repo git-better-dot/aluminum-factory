@@ -75,10 +75,12 @@
 
  .buttonLeft {
    left: 15px;
+   cursor: pointer;
  }
 
  .buttonRight {
    right: 15px;
+   cursor: pointer;
  }
 
  .divButtonLeft, .divButtonRight {
@@ -90,6 +92,7 @@
    top: 220px;
    border: 1px solid hsla(0, 0%, 100%, 40%);
    color: #222831;
+   cursor: pointer;
  }
 
 
