@@ -35,12 +35,12 @@ function displayRadioValue() {
     if (document.getElementById('malexx').checked === true) {
 
         gender = 'Male';
-     
+
         return gender;
 
-    } else if (document.getElementById('femalexx').checked === true){
+    } else if (document.getElementById('femalexx').checked === true) {
         gender = 'Female';
-        
+
         return gender;
     }
 }
@@ -95,7 +95,13 @@ function submitHandler(event) {
             //here we stoped the page from reloading
             break;
         } else if (i == x.length) {
-            alert('Wrong Username or password !!!');
+
+            Swal.fire({
+                icon: 'error',
+                title: 'error...',
+                text: 'Wrong Username or password !!!',
+            })
+
             break;
         }
     }

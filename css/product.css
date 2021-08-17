@@ -12,14 +12,13 @@ html {
   background-color: #EFEFEF;
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
+  text-align: center;
 }
 
 section {
   display: flex;
-  height: 50%;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 header {
@@ -28,8 +27,6 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  z-index: 20;
-  transition: all ease-in-out 600ms
 }
 
 header nav {
@@ -88,7 +85,6 @@ header nav div a:hover, header nav div a:active {
   outline-offset: 0px;
   text-shadow: none;
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-  /* outline-color: rgba(255, 255, 255, 0.5); */
   outline-color: hsla(14, 100%, 57%, 0.5);
   outline-offset: 0px;
 }
@@ -121,10 +117,6 @@ h1 {
   padding-top: 15px;
 }
 
-.main-container {
-  height: 500px;
-}
-
 .container {
   padding: 20px;
   position: relative;
@@ -136,16 +128,14 @@ h1 {
 .container .box {
   position: relative;
   width: 240px;
-  height: 220px;
-  overflow: hidden;
-  transition: 0.5s;
+  height: 400px;
   background-color: #fff;
-  border-radius: 10%;
+  border-radius: 8%;
+  transition: 350ms;
+
 }
 
 .container .box:hover {
-  z-index: 1;
-  height: 300px;
   transform: scale(1.05);
 }
 
@@ -162,7 +152,7 @@ h1 {
   object-fit: fill;
 }
 
-.container .box::before {
+/* .container .box::before {
   content: '';
   position: absolute;
   top: 0;
@@ -174,22 +164,26 @@ h1 {
   mix-blend-mode: multiply;
   opacity: 0;
   transition: 0.5s;
-}
-
+} */
+/* 
 .container .box:hover::before {
   opacity: 0.4;
-}
+} */
 
 .container .box .content {
-  position: absolute;
-  top: -15px;
-  left: 8px;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  display: flex;
-  align-items: flex-end;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 5px;
 }
+
+.container .box .content div {
+  position: absolute;
+  top: 195px;
+  padding: 6px;
+}
+
 
 .container .box .content h2 {
   color: #FF5722;
@@ -198,17 +192,17 @@ h1 {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
-  transform: translateY(200px);
+  /* transform: translateY(200px); */
 }
 
-.container .box:hover .content h2 {
+/* .container .box:hover .content h2 {
   transform: translateY(0);
   transition-delay: 0.6s;
-}
+} */
 
 .container .box .content p {
   color: #222831;
-  transform: translateY(200px);
+  /* transform: translateY(200px); */
   transition: 0.5s;
   margin-bottom: 10px;
   font-size: 14px;
@@ -217,7 +211,7 @@ h1 {
 
 .container .box .content .price {
   color: #04AA6D;
-  transform: translateY(200px);
+  /* transform: translateY(200px); */
   transition: 0.5s;
   margin-bottom: 10px;
   font-size: 15px;
@@ -225,15 +219,15 @@ h1 {
   font-weight: bold;
 }
 
-.container .box:hover .content p {
+/* .container .box:hover .content p {
   transform: translateY(0);
   transition-delay: 0.75s;
-}
+} */
 
 form {
   position: absolute;
-  top: 300px;
-  left: 51px;
+  top: 338px;
+  left: 0px;
   font-size: small;
   border-radius: 3px;
 }
@@ -263,6 +257,7 @@ input[type=submit] {
   border-radius: 3px;
   padding: 5px;
   margin-top: 5px;
+  cursor: pointer;
 }
 
 
