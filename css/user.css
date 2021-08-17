@@ -96,8 +96,9 @@ html {
 #LoginPic,
 #LoginName {
     display: inline;
-    margin-left: 10px;
+    margin-left: -9px;
     vertical-align: middle;
+    padding-right: 9px;
 }
 
 h1 {
@@ -121,4 +122,5 @@ b, p {
 #LoginName{
     color: white;
     padding-right: 20px;
+    display: contents;
 }

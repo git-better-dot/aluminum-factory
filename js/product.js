@@ -12,6 +12,7 @@ function addquentity(event) {
   if (count > 0) {
     form.remove();
   }
+  
   count++;
   event.preventDefault();
   form = document.createElement('form');

@@ -118,17 +118,13 @@ let divCount = 0;
 let h2 = document.getElementById('servicesHeader');
 let p = document.getElementById('servicesPara');
 let servicesimg = document.getElementById('sideImage');
-
 let headers = ['Folding Windows', 'Alucobond', 'Pergola Shutters', 'Slide-Up Windows'];
-
 let paragraphs = 
-[ 
-  'Folding windows consists of several panels whose frames are hinged to one another. It opens and closes by sliding horizontally, resembling an accordion. They are used where the opening is too wide for one or two segments, this arrangement allows the entire space to be opened.',
+[ 'Folding windows consists of several panels whose frames are hinged to one another. It opens and closes by sliding horizontally, resembling an accordion. They are used where the opening is too wide for one or two segments, this arrangement allows the entire space to be opened.',
   'The “skin of architecture” is a core topic of modern construction. Building envelopes therefore deserve particular attention. They can be simple and functional, exciting and representative. The proportion, surface structure and colouring of façades lead to the creation of unique structures; their interplay characterizes the  Alucobond idea.', 
   'Pergolas have centuries behind them. With Italian essence ingrained in their distinct structures, they boast a creation dating back to medieval times. These charming, open-air structures are secured with four posts or columns and topped with cross-beams or lattices. The airy structures are commonly made of wood, vinyl, or aluminum. Pergolas are most often installed on pavers or a concrete patio. This allows for outdoor furniture and or grilling equipment to be placed underneath it. Pergolas are a great way to make a part of your backyard space a central hangout spot.', 
   'Sliding windows are believed to have been invented in the 17th century in Holland. Originally known as the Yorkshire sash window, sliding windows have existed and evolved for hundreds of years. Originally, horizontal sash sliding windows simply used interlocking wooden frames that would slide open. Today, the basic operation is the same, but modern sliding windows utilize low friction rolling sliders, allowing easy operation at the push of a finger. This simplicity makes them popular for hard-to-reach areas.',  ];
-  
-  let productsImages = ['./img/companyP/pl5.png', './img/companyP/pl3.png', './img/companyP/pl4.png', './img/companyP/pl1.png'];
+let productsImages = ['./img/companyP/pl5.png', './img/companyP/pl3.png', './img/companyP/pl4.png', './img/companyP/pl1.png'];
 
 function divPlusDivs(){
 
