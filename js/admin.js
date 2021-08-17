@@ -144,10 +144,10 @@ function render1() {
     tr.appendChild(td5);
     let td6 = document.createElement('td');
     td6.textContent = arryofEmls[i];
-    tr.appendChild(td5);
+    tr.appendChild(td6);
     let td7 = document.createElement('td');
     td7.textContent = arryofMesseges[i];
-    tr.appendChild(td5);
+    tr.appendChild(td7);
   }
 
   let tfooter = document.createElement('tfoot');
