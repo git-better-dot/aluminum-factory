@@ -195,7 +195,7 @@ h1 {
 .container .box {
   position: relative;
   width: 240px;
-  height: 300px;
+  height: 220px;
   overflow: hidden;
   transition: 0.5s;
   background-color: #fff;
@@ -205,6 +205,7 @@ h1 {
 .container .box:hover {
   z-index: 1;
   transform: scale(1.05);
+  height: 300px;
 }
 
 .container .box .imgBox {
@@ -290,7 +291,7 @@ h1 {
 
 form {
   position: absolute;
-  top: 348px;
+  top: 300px;
   left: 51px;
   font-size: small;
   border-radius: 3px;
