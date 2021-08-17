@@ -1,9 +1,6 @@
-
-
 /* HEADER STYLING */
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap');
-
 html {
   margin: 0;
   padding: 0;
@@ -57,7 +54,6 @@ header nav div a:hover, header nav div a:active {
   background: hsla(0, 0%, 100%, 20%);
 }
 
-
 #navMenu button {
   background-color: hsla(217, 10%, 25%, 0%);
   position: absolute;
@@ -66,7 +62,6 @@ header nav div a:hover, header nav div a:active {
   border: 1px solid hsla(0, 0%, 100%, 0%);
   border-radius: 50%;
 }
-
 
 #buttonsSection button {
   padding: 9px 17px;
@@ -96,7 +91,6 @@ header nav div a:hover, header nav div a:active {
   outline-color: rgba(255, 255, 255, 0);
 }
 
-
 #myDIV {
   width: 35%;
   height: auto;
@@ -113,7 +107,7 @@ h1 {
   font-size: 22px;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom:2px solid #FF5722;
+  border-bottom: 2px solid #FF5722;
   padding-top: 15px;
 }
 
@@ -132,7 +126,6 @@ h1 {
   background-color: #fff;
   border-radius: 8%;
   transition: 350ms;
-
 }
 
 .container .box:hover {
@@ -165,17 +158,18 @@ h1 {
   opacity: 0;
   transition: 0.5s;
 } */
+
 /* 
 .container .box:hover::before {
   opacity: 0.4;
 } */
 
 .container .box .content {
-    height: 100%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    padding: 5px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 5px;
 }
 
 .container .box .content div {
@@ -183,7 +177,6 @@ h1 {
   top: 195px;
   padding: 6px;
 }
-
 
 .container .box .content h2 {
   color: #FF5722;
@@ -260,8 +253,6 @@ input[type=submit] {
   cursor: pointer;
 }
 
-
-
 /* FOOTER STYLING */
 
 footer {
@@ -270,8 +261,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #222831; 
+  background-color: #222831;
   color: white;
+  margin-top: 10px;
 }
 
 footer ul {
@@ -294,3 +286,25 @@ footer ul li a {
   transition: all 350ms;
 }
 
+#cartCaps {
+  border: none;
+	background: #ff5f15;
+	color: #ffffff !important;
+	font-weight: 100;
+	padding: 20px;
+	text-transform: uppercase;
+	border-radius: 6px;
+	display: inline-block;
+	transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+#cartCaps:hover {
+	color: #404040 !important;
+	font-weight: 700 !important;
+	letter-spacing: 3px;
+	background: none;
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.3s ease 0s;
+}
