@@ -11,6 +11,10 @@ html {
   font-family: 'Lato', sans-serif;
   text-align: center;
 }
+/* 
+:root { 
+  --cart-button-color: #ff5f15; 
+} */
 
 section {
   display: flex;
@@ -145,25 +149,6 @@ h1 {
   object-fit: fill;
 }
 
-/* .container .box::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 240px;
-  height: 300px;  
-  z-index: 1;
-  background: linear-gradient(180deg, #393E46, rgb(32, 24, 24));
-  mix-blend-mode: multiply;
-  opacity: 0;
-  transition: 0.5s;
-} */
-
-/* 
-.container .box:hover::before {
-  opacity: 0.4;
-} */
-
 .container .box .content {
   height: 100%;
   display: flex;
@@ -185,17 +170,10 @@ h1 {
   margin-bottom: 10px;
   font-size: 18px;
   font-weight: bold;
-  /* transform: translateY(200px); */
 }
-
-/* .container .box:hover .content h2 {
-  transform: translateY(0);
-  transition-delay: 0.6s;
-} */
 
 .container .box .content p {
   color: #222831;
-  /* transform: translateY(200px); */
   transition: 0.5s;
   margin-bottom: 10px;
   font-size: 14px;
@@ -204,18 +182,12 @@ h1 {
 
 .container .box .content .price {
   color: #04AA6D;
-  /* transform: translateY(200px); */
   transition: 0.5s;
   margin-bottom: 10px;
   font-size: 15px;
   font-style: normal;
   font-weight: bold;
 }
-
-/* .container .box:hover .content p {
-  transform: translateY(0);
-  transition-delay: 0.75s;
-} */
 
 form {
   position: absolute;
@@ -226,12 +198,10 @@ form {
 }
 
 label {
-  margin-bottom: 10px;
   text-transform: uppercase;
   font-weight: bold;
   padding: 8px;
   color: #393E46;
-  margin-top: 5px;
 }
 
 input[type=text] {
@@ -244,14 +214,26 @@ input[type=text] {
 }
 
 input[type=submit] {
-  width: 50%;
+  width: 53%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  padding: 5px;
-  margin-top: 5px;
+  padding: 9px 17px;
+  color: #FFF;
+  background-color: hsl(14, 100%, 57%);
+  font-size: 12px;
   cursor: pointer;
+  text-transform: uppercase;
+  border: 0 solid;
+  margin-top: 5px;
 }
+
+input[type=submit]:focus {
+	background: #49b94d;
+  transition: 350ms;
+  /* animation-name: addedToCart;
+  animation-duration: 4s; */
+  /* --cart-button-color: #49b94d;  */
+}
+
 
 /* FOOTER STYLING */
 
@@ -288,7 +270,8 @@ footer ul li a {
 
 #cartCaps {
   border: none;
-	background: #ff5f15;
+	/* background: var(--cart-button-color); */
+  background: #ff5f15; 
 	color: #ffffff !important;
 	font-weight: 100;
 	padding: 20px;
@@ -304,7 +287,18 @@ footer ul li a {
 	font-weight: 700 !important;
 	letter-spacing: 3px;
 	background: none;
-	-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
 	transition: all 0.3s ease 0s;
 }
+/* 
+@keyframes addedToCart {
+  0% { 
+    --cart-button-color: #ff5f15;
+  }
+  50% { 
+    --cart-button-color: #49b94d; 
+  }
+  100% { 
+    --cart-button-color: #ff5f15;
+  }
+} */
+

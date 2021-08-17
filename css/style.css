@@ -288,14 +288,6 @@ header nav div a:hover, header nav div a:active {
     cursor: pointer;
   }
   
-
-/* accessories section  */
-/* 
-.accessories {
-   position: relative;
-    top: -150px;
-} */
-
 .accessories h3 {
     margin: 55px 0px 20px 0px;
     color: #222831;
@@ -335,7 +327,7 @@ figure small {
 /* brief content */
 
 #brief {
-    background-image: url('../img/companyBackground.png');
+    background-image: url('../img/slide1.png');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
