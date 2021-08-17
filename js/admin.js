@@ -255,5 +255,6 @@ if (localStorage.cart3) {
 }
 
 function clearcart() {
+    document.getElementById('myChart') .remove();
     localStorage.removeItem('cart3');
 }
