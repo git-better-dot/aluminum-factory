@@ -89,6 +89,7 @@ function render() {
 
 function render1() {
 
+
   for (let i = 0; i < questionsMsgs.length; i++) {
     arryOfCtys[i] = questionsMsgs[i][0].country;
     console.log(arryOfCtys[i]);
@@ -163,6 +164,7 @@ function render1() {
   
 
   document.getElementById('msgButton').remove();
+
 
 }
 

@@ -73,6 +73,7 @@ header nav div a:hover, header nav div a:active {
     z-index: 5;
     border: 1px solid hsla(0, 0%, 100%, 0%);
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .sticky {
@@ -223,12 +224,73 @@ header nav div a:hover, header nav div a:active {
     text-align:center;
 }
 
-/* accessories section  */
+#servicesButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #servicesButtonContainer a {
+    position: relative;
+    width: 200px;
+    height: 45px;
+    display: inline-block;
+    background: #000;
+    margin: 20px;
+  }
+  
+  #servicesButtonContainer a::before, #servicesButtonContainer a::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ff7c22, #ff8e22, #EFEFEF, #03f0fc, #02a8b1);
+    transition: 0.5s;
+  }
+  
+  #servicesButtonContainer a:hover::before {
+    top: -3px;
+    bottom: -3px;
+    right: -3px;
+    left: -3px;
+  }
+  
+  #servicesButtonContainer a:hover::after {
+    top: -3px;
+    bottom: -3px;
+    right: -3px;
+    left: -3px;
+    filter: blur(10px);
+  }
+  
+  #servicesButtonContainer a button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #EFEFEF;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ff8e22;
+    cursor: pointer;
+  }
+  
 
+/* accessories section  */
+/* 
 .accessories {
-   /* position: relative;
-    top: -150px;*/
-}
+   position: relative;
+    top: -150px;
+} */
 
 .accessories h3 {
     margin: 30px 0px 20px 20px;
