@@ -272,8 +272,8 @@ footer ul li a {
 #cartCaps {
   border: none;
 	/* background: var(--cart-button-color); */
-  background: #ff5f15; 
-	color: #ffffff !important;
+  background: #ffffff; 
+	color: #ff5f15 !important;
 	font-weight: 100;
 	padding: 20px;
 	text-transform: uppercase;
@@ -362,4 +362,11 @@ input[type=radio] {
     --cart-button-color: #ff5f15;
   }
 } */
+
+#avalibale{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 

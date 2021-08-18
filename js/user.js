@@ -22,7 +22,7 @@ function mySignUpFunction() {
 function closeForm() {
     document.getElementById('SingUpForm').style.display = 'none';
     document.getElementById('LoginForm').style.display = 'none';
-    buttonsSection.style.display = 'inline';
+    buttonsSection.style.display = 'flex';
 }
 
 function getValuesLogin() {

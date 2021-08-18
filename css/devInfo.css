@@ -6,6 +6,7 @@ html {
     width: 100%;
     position: absolute;
     background-color: #EFEFEF;
+    color: black;
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
 }
