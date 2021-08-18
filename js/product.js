@@ -345,79 +345,63 @@ function quentity(event) {
 }
 //#################################################################
 //#################################################################
-let section = document.querySelector(".main-container");
-let section2 = document.querySelector(".main-container2");
-let div = section.getElementsByTagName("DIV");
- let  div2 = section2.getElementsByTagName("DIV");
+let section = document.querySelectorAll(".main-container");
+let p = document.createElement('p')
 function filter(){
     
-  var filterValue, input,i;
-   input = document.getElementById("search");
-   filterValue = input.value.toUpperCase()
-   console.log(filterValue)
-let error = 0
-      for (i = 0 ; i < div.length ; i=i+5){
-        
-        // console.log(div[i])
-        // console.log(div2[i])
-        console.log(filterValue)
+    var filterValue, input,i;
+     let error = 0
 
-          // a = li[i].getElementsByTagName("a")[0];
-          h = div[i].getElementsByTagName("h2")[0]
-          h2 = div2[i].getElementsByTagName("h2")[0]
-          
+     for (let j =0;j<section.length;j++){
+      let div = section[j].getElementsByTagName("DIV");
+      input = document.getElementById("search");
+     filterValue = input.value.toUpperCase()
 
-          if(h.innerHTML.toUpperCase().indexOf(filterValue) > -1 ){
-            console.log(h.innerHTML.toUpperCase().indexOf(filterValue))
-              div[i].style.display = "";
+        for (i = 0 ; i < div.length ; i=i+5){
 
-          }
-              
-         
-            else {
-              error++
-              div[i].style.display = "none";
-              
-            }
-            if(h2.innerHTML.toUpperCase().indexOf(filterValue) > -1){
-              div2[i].style.display = "";
-            }
-            else{
-              error++
-              div2[i].style.display = "none";
+             h = div[i].getElementsByTagName("h2")[0]
+             if(h.innerHTML.toUpperCase().indexOf(filterValue) > -1 ){
+                            div[i].style.display = "";
+                            p.remove()
+                            // error = 0
+                        }
+                            
+                       
+                          else {
+                            error++
+                            div[i].style.display = "none";
 
-            }
+                          }}}
+                          if(error == 8){
+                            console.log(error)
+                                    p.innerText =` this item not avalibale`
+                                    p.id = 'avalibale'
+                                    section[0].appendChild(p)
+                                  }}
+                        
 
-      }if(error == 8){
-        let p = document.createElement('p')
-        p.innerText =` this item not avalibale`
-        p.id = 'avalibale'
-        section.appendChild(p)
-      }
-  }
-//#################################################################
-//#################################################################
+// //#################################################################
+// //#################################################################
 
 let pricenumber = []
 function search(){
+  for (let j =0;j<section.length;j++){
+    let div = section[j].getElementsByTagName("DIV");
   for (i = 0 ; i < div.length ; i=i+5){
     price = div[i].querySelector('p.price')
-    price2 =  div2[i].querySelector('p.price')
     let pricearr =  price.innerHTML.split(' ')
-    let pricearr2 = price2.innerHTML.split(' ')
-    pricearr2.splice(0,1)
-    pricearr2.splice(1,1)
     pricearr.splice(0,1)
     pricearr.splice(1,1)
-    pricenumber.push(Number(pricearr),Number(pricearr2))
+    pricenumber.push(Number(pricearr))
   }
-}
+}}
 search()
 let max;
 let min;
 let newfliter ;
+
 function filterprice(){
-  console.log(pricenumber)
+  p.remove()
 
   let rd1 = document.getElementById('rd1')
   let rd2 = document.getElementById('rd2')
@@ -432,38 +416,23 @@ function filterprice(){
     
   }
   newfliter= pricenumber.filter(function(value){
-    console.log(min)
-    console.log(max)
     return (value<=max && value>=min);
   });
-  
+  for (let j =0;j<section.length;j++){
+    let div = section[j].getElementsByTagName("DIV");
   for (i = 0 ; i < div.length ; i=i+5){
-    console.log('ello')
     price = div[i].querySelector('p.price')
-    price2 =  div2[i].querySelector('p.price')
     let pricearr =  price.innerHTML.split(' ')
-    let pricearr2 = price2.innerHTML.split(' ')
-    pricearr2.splice(0,1)
-    pricearr2.splice(1,1)
-    pricearr2 = Number(pricearr2)
     pricearr.splice(0,1)
     pricearr.splice(1,1)
     pricearr = Number(pricearr)
 if(newfliter.includes(pricearr)){
-  console.log(pricearr)
 div[i].style.display = '';
 }
 else{
-  console.log(pricearr)
-
   div[i].style.display = 'none';
 }
-if(newfliter.includes(pricearr2)){
-  div2[i].style.display = '';
-  }
-  else{
-    div2[i].style.display = 'none';
-  }
-}}
+
+}}}
 
 
