@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/ac.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/user.css">
     <link rel="stylesheet" href="./css/mainimg.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/devInfo.css">
     <title>Developers</title>
 </head>
@@ -20,8 +20,8 @@
         <nav id="navBar">
             <div>
                 <a href="./index.html">Home</a>
-                <a href="./product/product.html"> Products & Services</a>
-                <a href="">Accessories</a>
+                <a href="./services.html"> Products & Services</a>
+                <a href="./product/product.html">Store</a>
                 <a href="./contact-us.html">About & Contact</a>
             </div>
 
@@ -32,11 +32,13 @@
             <div id="navMenu">
                 <button style="background-color: hsla(217, 10%, 25%, 0%);padding-top: 4px;position: absolute;right: 16px;z-index: 5;" onclick="myFunction()"><img src="./img/muneSide.png" alt="menu" height="30" width="30"></button>
                 <div id="myDIV" style="position: absolute;top: -5px;right: 16px;display: block;z-index: 2;">
-                <a style="display: block;" href="./index.html">Home</a>
-                <a style="display: block;" href="./product/product.html">PRODUCTS LINE</a>
-                <a style="display: block;" href="">SERVICES</a>
-                <a style="display: block;" href="">STORE</a>
-                <a style="display: block;" href="./contact-us.html">ABOUT & CONTACT</a>
+                    <a style="display: block;" href="./index.html">Home</a>
+                    <a style="display: block;" href="./services.html">SERVICES</a>
+                    <a style="display: block;" href="./product/product.html">STORE</a>
+                    <a style="display: block;" href="./contact-us.html">ABOUT & CONTACT</a>
+                    <a style="display: block;" href="./devInfo.html">DEVELOPERS Team</a>
+                    <br>
+                    <a style="display: block;" href="./admin.html" class="adminButton">Admin Control</a>
                 </div>
 
             </div>
@@ -106,21 +108,25 @@
 
     <footer id="footer">
         <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./product/product.html">PRODUCTS LINE</a></li>
-            <li><a href="">SERVICES</a></li>
-            <li><a href="">STORE</a></li>
+            <li><a href="#mainSlider">Home</a></li>
+            <li><a href="./services.html">SERVICES</a></li>
+            <li><a href="./product/product.html">STORE</a></li>
             <li><a href="./contact-us.html">ABOUT US</a></li>
-            <li><a href="./contact-us.html">CONTACT US</a></li>
+            <li><a href="./contact-us.html#contact">CONTACT US</a></li>
         </ul>
         <p>All rights reserved &copy; 2021</p>
+        <p style="padding-top: 10px;">Team &nbsp; <a style="text-decoration: none;color: #fff;" href="./devInfo.html">Git Better .</a></p>
     </footer>
 
-    <script src="./js/contact.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./js/app.js"></script>
     <script src="./js/homepageCSS.js"></script>
     <script src="./js/user.js"></script>
     <script src="./js/mainimg.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/devInfo.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
