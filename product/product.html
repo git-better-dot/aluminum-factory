@@ -106,30 +106,28 @@
     <section style="height: fit-content; padding: 30px;">
       <h1>Accessories Store</h1>
     </section>
-    <section>
-      <p style="position: relative; right: 550px;">Click on products to order them</p>
-      
+
+    <!-- STORE BAR -->
+    
+    <section id="storeBar">
+
+      <p>Click on products to order them</p>
+  
+      <div class="box1">
+        <input id="search"  type="text" placeholder="Search">
+        <button onclick="filter()" id = "but-filter">search</button>
+       </div>
+
+      <div>
+        <input type="radio" id='rd1' name="filt">less than 19 </input>
+        <input type="radio" id='rd2' name="filt"> more than 20 </input>
+        <button onclick="filterprice()" id = "but-filter"> filter</button>
+      </div>
+
+      <a id="cartCaps" href="./cart.html">CART</a>
     </section>
-    
 
-    <a id="cartCaps" href="./cart.html">CART</a>
-    
-    <div class="box1">
 
-    
-      <input id="search"  type="text" placeholder="Search">
-      <button onclick="filter()" id = "but-filter"> search</button>
-
-    
-    </div>
-
-    <div>
-      
-      <input type="radio" id='rd1' name="filt">less than 19 </input>
-      <input type="radio" id='rd2' name="filt"> more than 20 </input>
-      <button onclick="filterprice()" id = "but-filter"> filter</button>
-
-    </div>
     
     <section class="main-container">
       <div class="container" id='firstimg'>
@@ -255,7 +253,10 @@
         </div>
       </div>
     </section>
-    <a id="cartCaps" href="./cart.html">CART</a>
+
+    <div id="lastButton">
+      <a id="cartCaps" href="./cart.html">CART</a>
+    </div>
 
   </main>
 

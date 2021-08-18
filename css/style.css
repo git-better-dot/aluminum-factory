@@ -166,7 +166,7 @@ header nav div a:hover, header nav div a:active {
 }
 
 #buttonsSection button, #brief button{
-    padding: 9px 17px;
+    padding: 9px 10px;
     color: #FFF;
     background-color: hsl(14, 100%, 57%);
     /* margin-left: 5px; */
@@ -311,9 +311,16 @@ header nav div a:hover, header nav div a:active {
     color: #ff8e22;
     cursor: pointer;
   }
+
+  #accessories {
+    height: fit-content;
+    position :relative;
+    top: -40px;
+    margin-bottom: 40px;
+}
   
 .accessories h3 {
-    margin: 55px 0px 20px 0px;
+    margin: 65px 0px 30px 10px;
     color: #222831;
     font-size: 20px;
     font-weight: bold;
@@ -400,7 +407,6 @@ figure small {
 
 }
 
-
 footer {
     height: 120px;
     display: flex;
@@ -450,12 +456,6 @@ footer ul {
   figure figcaption {
     padding: 10px;
 }
-
-#accessories {
-    height: 110vh;
-    position :relative;
-    top: -95px;
-    }
 
 #SignUpBtn{
     margin-right: 30px;

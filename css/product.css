@@ -115,6 +115,7 @@ h1 {
   padding-top: 15px;
 }
 
+
 .container {
   padding: 20px;
   position: relative;
@@ -289,8 +290,68 @@ footer ul li a {
 	background: none;
 	transition: all 0.3s ease 0s;
 }
-/* 
-@keyframes addedToCart {
+
+/* main a:nth-child(4) {
+  position: absolute;
+  right: 10%;
+} */
+
+#storeBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #b9b9b9;
+  margin-bottom: 20px;
+  color:hsl(216, 18%, 16%);
+  height: 60px;
+}
+
+.box1 {
+  display: inline-flex;
+}
+
+.box1 input[type=text] {
+  margin-top: 8px;
+  font-size: 14px;
+  border: none;
+  width: 170px;
+  margin-top: 0px;
+}
+
+.box1 button, #but-filter, #storeBar #cartCaps {
+  padding: 10px 10px;
+  width: 70px;
+  background: #ddd;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  transition: 350ms;
+  color:hsl(216, 18%, 16%);
+}
+
+#but-filter {
+  margin-left: 10px;
+}
+
+.box1 button:hover, #but-filter:hover {
+  background-color: hsla(0, 0%, 100%, 30%);
+}
+
+#rd1 {
+  margin-right: 5px;
+}
+
+input[type=radio] {
+  width: 15px;
+  height: 15px;
+}
+
+#lastButton {
+  margin: 30px;
+}
+
+
+/* @keyframes addedToCart {
   0% { 
     --cart-button-color: #ff5f15;
   }
@@ -302,8 +363,3 @@ footer ul li a {
   }
 } */
 
-
-
-#avalibale{
-  
-}
