@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Open+Sans&family=Roboto&family=Roboto+Slab&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    background-color: #EFEFEF;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+header {
+    background-color: hsl(216, 18%, 16%);
+    height: 70px;
+    width: 100%;
+    display: flex;
+    z-index: 20;
+    transition: all ease-in-out 600ms
+}
+
+#logo{
+    padding: 15px;
+    padding-left: 25px;
+    cursor: pointer;
+    width: 150px;
+    object-fit: contain;
+}
+
+header nav {
+    position: relative;
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+
+#centerlist{
+    width: 100%;
+    text-align: center;
+}
+
+#buttonsSection{
+    display: flex;
+    width: 205px;
+    gap: 5px;
+}
+
+header nav div a, footer ul li a {
+    position: relative;
+    top: 20%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 550;
+    text-transform: uppercase;
+    transition: all 350ms;
+}
+
+header nav div a:hover, header nav div a:active {
+    background: hsla(0, 0%, 100%, 20%);
+}
+  
+
+#navMenu button {
+    background-color: hsla(217, 10%, 25%, 0%);
+    position: absolute;
+    right: 16px;
+    z-index: 5;
+    border: 1px solid hsla(0, 0%, 100%, 0%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 550ms;
+    background-color: hsla(216, 18%, 16%, 85%);
+    /* height: 50px; */
+    width: 100%;
+    /* padding-bottom: 10px; */
+}
+
+.sticky nav a:hover {
+    background: hsla(0, 0%, 100%, 20%);
+    position: relative;
+}
+
+#usersBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background-color: #b9b9b9;
+}
+
+#usersBar span {
+    display: flex;
+}
+
+.flexElement small {
+    position: relative;
+    right: 130px;
+    top: 27px;
+    font-size: 12px;
+}
+
+#fbSmall {
+    right: 160px;
+}
+
+.flexElement h2 {
+    position: relative;
+    top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#mainheader {
+    background-color: #222831;
+}
+
+#myDIV {
+    width: 230px;
+    height: auto;
+    padding: 25px 0;
+    text-align: center;
+    background-color: #222831;
+    margin-top: 20px;
+}
+
+#buttonsSection button, #brief button{
+    padding: 9px 17px;
+    color: #FFF;
+    background-color: hsl(14, 100%, 57%);
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 0 solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+    outline-color: hsla(14, 100%, 57%, 0.5);
+    outline-offset: 0px;
+    width: 100px;
+  }
+  
+  #mainHeader button:hover, #brief button:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.1);
+    outline-offset: 15px;
+    outline-color: rgba(255, 255, 255, 0);
+  }
+
+/* Main  */
+
+#teamMembers {
+    height: fit-content;
+    width: 90%;
+    margin: auto;
+
+}
+
+.memberDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 25px;
+    height: 200px;
+    border: 1px solid #FFF;
+    background-color: hsla(0, 0%, 100%, 40%);
+    border-radius: 5px;
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.memberDiv1 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    margin: auto;
+}
+
+.memberDiv img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.memberDiv h2 {
+    color: #393E46;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: -20px;
+    position: relative;
+    right: 25px;
+    top: 7px;
+}
+
+.memberDiv p {
+    color:#212730;
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+}
+
+button {
+    position: relative;
+    top: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+button:hover {
+    background-color: #FF5722;
+    color: #000;
+}
