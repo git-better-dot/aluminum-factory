@@ -343,4 +343,96 @@ function quentity(event) {
 
 
 }
+//#################################################################
+//#################################################################
+let section = document.querySelectorAll(".main-container");
+let p = document.createElement('p')
+function filter(){
+    
+    var filterValue, input,i;
+     let error = 0
+
+     for (let j =0;j<section.length;j++){
+      let div = section[j].getElementsByTagName("DIV");
+      input = document.getElementById("search");
+     filterValue = input.value.toUpperCase()
+
+        for (i = 0 ; i < div.length ; i=i+5){
+
+             h = div[i].getElementsByTagName("h2")[0]
+             if(h.innerHTML.toUpperCase().indexOf(filterValue) > -1 ){
+                            div[i].style.display = "";
+                            p.remove()
+                            // error = 0
+                        }
+                            
+                       
+                          else {
+                            error++
+                            div[i].style.display = "none";
+
+                          }}}
+                          if(error == 8){
+                            console.log(error)
+                                    p.innerText =` this item not avalibale`
+                                    p.id = 'avalibale'
+                                    section[0].appendChild(p)
+                                  }}
+                        
+
+// //#################################################################
+// //#################################################################
+
+let pricenumber = []
+function search(){
+  for (let j =0;j<section.length;j++){
+    let div = section[j].getElementsByTagName("DIV");
+  for (i = 0 ; i < div.length ; i=i+5){
+    price = div[i].querySelector('p.price')
+    let pricearr =  price.innerHTML.split(' ')
+    pricearr.splice(0,1)
+    pricearr.splice(1,1)
+    pricenumber.push(Number(pricearr))
+  }
+}}
+search()
+let max;
+let min;
+let newfliter ;
+
+function filterprice(){
+  p.remove()
+
+  let rd1 = document.getElementById('rd1')
+  let rd2 = document.getElementById('rd2')
+  if(rd1.checked==true){
+    max = 19;
+    min = 0;
+
+  }
+  if(rd2.checked==true){
+    max = 30;
+    min = 20;
+    
+  }
+  newfliter= pricenumber.filter(function(value){
+    return (value<=max && value>=min);
+  });
+  for (let j =0;j<section.length;j++){
+    let div = section[j].getElementsByTagName("DIV");
+  for (i = 0 ; i < div.length ; i=i+5){
+    price = div[i].querySelector('p.price')
+    let pricearr =  price.innerHTML.split(' ')
+    pricearr.splice(0,1)
+    pricearr.splice(1,1)
+    pricearr = Number(pricearr)
+if(newfliter.includes(pricearr)){
+div[i].style.display = '';
+}
+else{
+  div[i].style.display = 'none';
+}
+
+}}}
+
 
