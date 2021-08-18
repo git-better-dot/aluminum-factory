@@ -8,14 +8,14 @@ let arryOfPasswords = [];
 
 function myLogInFunction() {
     document.getElementById('LoginForm').style.display = 'block';
-    buttonsSection.style.display = 'none';
-    
+    // buttonsSection.style.display = 'none';
+
 }
 
 //this funtion saves the valuse in the username field and password filed in the form btw you have to call it later
 function mySignUpFunction() {
     document.getElementById('SingUpForm').style.display = 'block';
-    buttonsSection.style.display = 'none';
+    // buttonsSection.style.display = 'none';
 }
 //this funtion is a on click funtion to the close button on the form it will hide the form and display the buttonsSection div
 
