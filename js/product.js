@@ -354,7 +354,7 @@ function filter(){
 
   for (let j =0;j<section.length;j++){
     let div = section[j].getElementsByTagName('DIV');
-    input = document.getElementById('search');
+    let input = document.getElementById('search');
     filterValue = input.value.toUpperCase();
 
     for (i = 0 ; i < div.length ; i=i+5){
@@ -371,7 +371,7 @@ function filter(){
         error++;
         div[i].style.display = 'none';
 
-      }}}   filter.reset();
+      }}}   input.reset();
 
   if(error == 8){
     console.log(error);
