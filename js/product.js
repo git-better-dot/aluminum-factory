@@ -371,7 +371,8 @@ function filter(){
         error++;
         div[i].style.display = 'none';
 
-      }}}
+      }}}   filter.reset();
+
   if(error == 8){
     console.log(error);
     p.innerText =' this item not avalibale';
