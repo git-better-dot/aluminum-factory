@@ -371,7 +371,7 @@ function filter(){
         error++;
         div[i].style.display = 'none';
 
-      }}}   input.reset();
+      }}}
 
   if(error == 8){
     console.log(error);
